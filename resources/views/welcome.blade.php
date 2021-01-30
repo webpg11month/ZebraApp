@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    ZebraAppTest
+                    ZebraAppmanshou
                 </div>
 
                 <div class="links">
