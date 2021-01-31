@@ -81,12 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-<<<<<<< HEAD:resources/views/index.blade.php
-                    ZebraAppmanshouTest
-=======
-        
                     ZebraAppmanshou
->>>>>>> 005584a26c4c40edb35505080725e291db70a620:resources/views/welcome.blade.php
                 </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
