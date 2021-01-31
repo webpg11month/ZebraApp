@@ -81,7 +81,10 @@
 
             <div class="content">
                 <div class="title m-b-md">
+<<<<<<< HEAD
         
+=======
+>>>>>>> 2604c19e6938ef97aee290b4179026c04847d783
                     ZebraAppmanshou
                 </div>
                 <div class="links">
