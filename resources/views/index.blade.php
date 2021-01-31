@@ -81,6 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
+<<<<<<< HEAD
 <<<<<<< HEAD:resources/views/welcome.blade.php
 <<<<<<< HEAD
         
@@ -89,6 +90,9 @@
 =======
 >>>>>>> b45725e57806303bfa8a47fcca5e88f910139ce7:resources/views/index.blade.php
                     ZebraAppmanshou
+=======
+                    Zebra
+>>>>>>> master
                 </div>
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
