@@ -1,7 +1,7 @@
 <?php
 /*
 カラム追加
-*/ 
+*/
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
@@ -29,15 +29,15 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'birthday'=>['required', 'string', 'max:255'],
-            
+
         ]);
     }
 
     protected function create(array $data)
     {
         return User::create([
-            'first_name' => $data['name'],
-            'last_name' => $data['name'],
+            'first_name' => $data['first_name'],
+            'last_name' => $data['last_name'],
             'password' => Hash::make($data['password']),
             'email' => $data['email'],
             'birthday' =>$data['birthday'],
