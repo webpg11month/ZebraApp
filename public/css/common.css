@@ -5,10 +5,6 @@
 }
 /* スマホ処理 iphoneX*/
 @media screen and (min-width:280px) and (max-width:374px) {
-    a:hover {
-        color: #fafafa;
-        text-decoration: none;
-    }
     #hamburger-link{
         color: #fafafa;
         text-decoration: none;
@@ -239,14 +235,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -517,14 +513,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -796,14 +792,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -1075,14 +1071,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -1354,14 +1350,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -1633,14 +1629,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;

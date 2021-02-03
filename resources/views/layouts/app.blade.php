@@ -36,7 +36,7 @@
                 <nav class="hamburger-content">
                     <ul class="hamburger-list">
                       <li class="hamburger-item">
-                          <a href="#">ハードウェア</a>
+                          <a id="hamburger-link1" href="#">ハードウェア</a>
                       </li>
                       <li class="hamburger-item-1">
                           <a id="hamburger-link1" href="#">ニュース</a>
@@ -87,10 +87,10 @@
               </div>
               <!-- <img id="fadeInOutImg" src="search.png" alt="検索"> -->
               <!-- <p id="fadeInOutImg">〇</p></div> -->
+              <h1 class="header-search-1">Zebra</h1>
               <div class="switch-btn">
                 <i class="fa fa-search size" id="fadeInOutImg" aria-hidden="true"></i>
               </div>
-              <h1 class="header-search-1">Zebra</h1>
               <div class="header-fadeImg">
               <form class="header-fadeImg-1" action="sample01.html" method="get">
                   <input type="text" name="search" value="" placeholder="キーワードを入力">
