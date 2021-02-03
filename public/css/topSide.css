@@ -4,7 +4,11 @@ body {
   padding: 0;
 }
 /* web用サイドバー */
-@media screen and (min-width: 1025px) {
+@media screen and (min-width:1025px) {
+.mobil-setting {
+    display: none;
+}
+
 #sub {
   box-sizing: border-box;
   top: 0px;

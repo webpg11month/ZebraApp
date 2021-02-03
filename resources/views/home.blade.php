@@ -1,4 +1,4 @@
-@extends('layouts.toplayout')
+@extends('layouts.app')
 
 @section('content')
 <!DOCTYPE html>
@@ -40,11 +40,11 @@
                 <li class="side-contact">問い合わせ</li>
                 <div class="login">
                     @guest
-                    
+
                         <li><a id="sideA" href="{{ route('login') }}">{{ __('ログイン') }}</a></li>
                         @if (Route::has('register'))
                         <li><a id="sideA" href="{{ route('register') }}">{{ __('サインアップ') }}</a></li>
-                    
+
                     @endif
                     @else
                     <a class="logout" href="{{ route('logout') }}" onclick="event.preventDefault();

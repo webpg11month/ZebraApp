@@ -1,8 +1,4 @@
-@media screen and (min-width:1025px) {
-  .mobil-setting {
-    display: none;
-  }
-}
+
 /* スマホ処理 iphoneX*/
 @media screen and (min-width:280px) and (max-width:374px) {
     a:hover {
