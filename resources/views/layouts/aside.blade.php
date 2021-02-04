@@ -1,4 +1,5 @@
     <!-- サイドバー始まり -->
+    <div class="sub-all">
     <aside id="sub">
         <div class="side-heder">
             <h1 class="header-logo">Zebra</h1>
@@ -51,5 +52,5 @@
         <img src="search_button.gif" alt="検索" onclick="search_submit();" id="search_btn">
     </div>
     <!-- サーチコンソール -->
-</body>
-</html>
+    </div>
+
