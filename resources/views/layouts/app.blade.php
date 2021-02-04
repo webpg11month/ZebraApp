@@ -1,3 +1,4 @@
+@extends('layouts.footer')
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -26,39 +27,39 @@
 <body>
     <header>
         <div class="mobil-setting"><!-- モバイル設定 -->
-          <nav class="flex-search">
-              <div class="hamburger">
+        <nav class="flex-search">
+            <div class="hamburger">
                 <input type="checkbox" id="hamburger-check" class="chekc-hidden">
                 <label for="hamburger-check" class="hamburger-open">
-                  <span></span>
+                <span></span>
                 </label>
                 <label for="hamburger-check" class="hamburger-close"></label>
                 <nav class="hamburger-content">
                     <ul class="hamburger-list">
-                      <li class="hamburger-item">
-                          <a id="hamburger-link1" href="#">ハードウェア</a>
-                      </li>
-                      <li class="hamburger-item-1">
-                          <a id="hamburger-link1" href="#">ニュース</a>
-                      </li>
-                      <li class="hamburger-item-1">
-                          <a id="hamburger-link2" href="#">ランキング</a>
-                      </li>
-                      <li class="hamburger-item-1">
+                    <li class="hamburger-item">
+                        <a id="hamburger-link1" href="#">ハードウェア</a>
+                    </li>
+                    <li class="hamburger-item-1">
+                        <a id="hamburger-link1" href="#">ニュース</a>
+                    </li>
+                    <li class="hamburger-item-1">
+                        <a id="hamburger-link2" href="#">ランキング</a>
+                    </li>
+                    <li class="hamburger-item-1">
                         <a id="hamburger-link3" href="#">セール情報</a>
-                      </li>
-                      <li class="hamburger-item">
-                          <a id="hamburger-link4" href="#">ソフトウェア</a>
-                      </li>
-                      <li class="hamburger-item-1">
+                    </li>
+                    <li class="hamburger-item">
+                        <a id="hamburger-link4" href="#">ソフトウェア</a>
+                    </li>
+                    <li class="hamburger-item-1">
                         <a id="hamburger-link5" href="#">ニュース</a>
-                      </li>
-                      <li class="hamburger-item-1">
+                    </li>
+                    <li class="hamburger-item-1">
                         <a id="hamburger-link6" href="#">人気言語</a>
-                      </li>
-                      <div class="hamburger-item-footer">
+                    </li>
+                    <div class="hamburger-item-footer">
                         <li class="hamburger-item-2">
-                          <a id="hamburger-link7" href="#">問い合わせ</a>
+                        <a id="hamburger-link7" href="#">問い合わせ</a>
                         </li>
                         @guest
                             <li class="hamburger-item-2">
@@ -81,70 +82,31 @@
                                 </form>
                             </li>
                         @endguest
-                      </div>
+                    </div>
                     </ul>
                 </nav>
-              </div>
-              <!-- <img id="fadeInOutImg" src="search.png" alt="検索"> -->
-              <!-- <p id="fadeInOutImg">〇</p></div> -->
-              <h1 class="header-search-1">Zebra</h1>
-              <div class="switch-btn">
+            </div>
+            <h1 class="header-search-1">Zebra</h1>
+            <div class="switch-btn">
                 <i class="fa fa-search size" id="fadeInOutImg" aria-hidden="true"></i>
-              </div>
-              <div class="header-fadeImg">
-              <form class="header-fadeImg-1" action="sample01.html" method="get">
-                  <input type="text" name="search" value="" placeholder="キーワードを入力">
-                  <button>検索</button>
+            </div>
+            <div class="header-fadeImg">
+            <form class="header-fadeImg-1" action="sample01.html" method="get">
+                <input type="text" name="search" value="" placeholder="キーワードを入力">
+                <button>検索</button>
                 </form>
-              </div>
-          </nav>
-          <script type="text/javascript" src="js/common.js"></script>
-        </div><!-- モバイル設定  完了 -->
-      </header>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Zebra') }}
-                </a>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            <li class="nav-item">
-                                <a href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li>
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-
-                            <a class="dropdown-item" href="{{ route('logout') }}"
-                                onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">
-                                {{ __('Logout') }}
-                            </a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                @csrf
-                            </form>
-                        @endguest
-                    </ul>
-                </div>
             </div>
         </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
+        <script type="text/javascript" src="js/common.js"></script>
+        </div><!-- モバイル設定  完了 -->
+    </header>
+    <main class="py-4">
+        <a href="{{ url('/') }}">
+            {{ config('app.name', 'Zebra') }}
+        </a>
+        @yield('content')
+        @yield('content-footer')
+    </main>
     </div>
     @guest
     @else

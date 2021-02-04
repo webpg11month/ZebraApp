@@ -1,3 +1,8 @@
+@media screen and (min-width:1025px) {
+    .mobil-setting {
+      display: none;
+    }
+  }
 
 /* スマホ処理 iphoneX*/
 @media screen and (min-width:280px) and (max-width:374px) {
@@ -53,6 +58,7 @@
   .mobil-setting{
     width: 100%;
     height: 22vw;
+    position: fixed;
     background-color: #5c5555;
   }
   .header-search-1{
@@ -235,14 +241,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -281,6 +287,30 @@
   }
   .size{
     font-size: 1.5rem;
+  }
+    /*
+  footer start
+  edit_manshou
+  */
+  body,
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    /* メインの間隔を修正できる */
+    min-height: 100vh;
+  }
+  footer {
+    margin-top: auto;
+    height: 22vw;
+    background-color: #5c5555;
+  }
+  .footer-icon-flex{
+    margin: 3vw;
+
+  }
+  .copy-light {
+    background-color: aqua;
+    font-size: 10px;
   }
 }
 @media screen and (min-width:375px) and (max-width:414px) {
@@ -332,6 +362,7 @@
   .mobil-setting{
     width: 100%;
     height: 22vw;
+    position: fixed;
     background-color: #5c5555;
   }
   .header-search-1{
@@ -513,14 +544,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -559,6 +590,29 @@
   }
   .size{
     font-size: 1.5rem;
+  }
+    /*
+  footer start
+  edit_manshou
+  */
+  body,
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    /* メインの間隔を修正できる */
+    min-height: 100vh;
+  }
+  footer {
+    margin-top: auto;
+    height: 22vw;
+    background-color: #5c5555;
+  }
+  .footer-icon-flex{
+    margin: 3vw;
+  }
+  .copy-light {
+    background-color: aqua;
+    font-size: 10px;
   }
 }
 @media screen and (min-width:415px) and (max-width:425px){
@@ -610,6 +664,7 @@
   .mobil-setting{
     width: 100%;
     height: 22vw;
+    position: fixed;
     background-color: #5c5555;
   }
   .header-search-1{
@@ -792,14 +847,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -839,8 +894,35 @@
   .size{
     font-size: 1.5rem;
   }
+    /*
+  footer start
+  edit_manshou
+  */
+  body,
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    /* メインの間隔を修正できる */
+    min-height: 100vh;
+  }
+  footer {
+    margin-top: auto;
+    height: 22vw;
+    background-color: #5c5555;
+  }
+  .footer-icon-flex{
+    margin: 3vw;
+
+  }
+  .copy-light {
+    background-color: aqua;
+    font-size: 10px;
+  }
 }
-@media screen and (min-width:500px) and (max-width:766px){
+@media screen and (min-width:426px) and (max-width:766px){
+    .main-fix{
+        margin-top: 7vw;
+    }
     #hamburger-link{
         color: #fafafa;
         text-decoration: none;
@@ -889,6 +971,7 @@
   .mobil-setting{
     width: 100%;
     height: 22vw;
+    position: fixed;
     background-color: #5c5555;
   }
   .header-search-1{
@@ -1071,14 +1154,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -1117,6 +1200,30 @@
   }
   .size{
     font-size: 2.5rem;
+  }
+    /*
+  footer start
+  edit_manshou
+  */
+  body,
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    /* メインの間隔を修正できる */
+    min-height: 100vh;
+  }
+  footer {
+    margin-top: auto;
+    height: 22vw;
+    background-color: #5c5555;
+  }
+  .footer-icon-flex{
+    margin: 3vw;
+
+  }
+  .copy-light {
+    background-color: aqua;
+    font-size: 10px;
   }
 }
 @media screen and (min-width:767px) and (max-width:768px){
@@ -1168,6 +1275,7 @@
   .mobil-setting{
     width: 100%;
     height: 22vw;
+    position: fixed;
     background-color: #5c5555;
   }
   .header-search-1{
@@ -1350,14 +1458,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -1397,8 +1505,32 @@
   .size{
     font-size: 3rem;
   }
+    /*
+  footer start
+  edit_manshou
+  */
+  body,
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    /* メインの間隔を修正できる */
+    min-height: 100vh;
+  }
+  footer {
+    margin-top: auto;
+    height: 22vw;
+    background-color: #5c5555;
+  }
+  .footer-icon-flex{
+    margin: 3vw;
+
+  }
+  .copy-light {
+    background-color: aqua;
+    font-size: 10px;
+  }
 }
-@media screen and (min-width:1023px) and (max-width:1024px){
+@media screen and (min-width:768px) and (max-width:1024px){
     #hamburger-link{
         color: #fafafa;
         text-decoration: none;
@@ -1447,6 +1579,7 @@
   .mobil-setting{
     width: 100%;
     height: 22vw;
+    position: fixed;
     background-color: #5c5555;
   }
   .header-search-1{
@@ -1629,14 +1762,14 @@
   }
   #fadeInOutImg {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 6vw;
     margin-left: 86vw;
     z-index: 15;
   }
   #fadeInOutImg1 {
     width: 8vw;
-    position: fixed;
+    position: absolute;
     margin-top: 3vw;
     margin-left: 86vw;
     z-index: 15;
@@ -1675,5 +1808,28 @@
   }
   .size{
     font-size: 4rem;
+  }
+    /*
+  footer start
+  edit_manshou
+  */
+  body,
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    /* メインの間隔を修正できる */
+    min-height: 100vh;
+  }
+  footer {
+    margin-top: auto;
+    height: 22vw;
+    background-color: #5c5555;
+  }
+  .footer-icon-flex{
+    margin: 3vw;
+  }
+  .copy-light {
+    background-color: aqua;
+    font-size: 10px;
   }
 }
