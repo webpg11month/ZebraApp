@@ -13,32 +13,6 @@
 
 </head>
 <body>
-    <main class="main-fix">
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-
-        <h1>test</h1><br>
-        <h1>test</h1><br>
-    </main>
 </body>
 </html>
 @endsection
