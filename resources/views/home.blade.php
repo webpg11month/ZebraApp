@@ -72,6 +72,7 @@
         <img src="search_button.gif" alt="検索" onclick="search_submit();" id="search_btn">
     </div>
     <!-- サーチコンソール -->
+    <div class="mainBlock"></div>
 </body>
 <script>
     function search_window_flag(flag) {
