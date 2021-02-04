@@ -106,3 +106,8 @@ justify-content: space-between;
       cursor: pointer;
   }
 }
+@media screen and (max-width: 1025px) {
+  .sub-all {
+    display: none;
+  }
+}
