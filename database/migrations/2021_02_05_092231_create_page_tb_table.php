@@ -15,7 +15,7 @@ class CreatePageTbTable extends Migration
     {
         Schema::create('page_tb', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->int('page_id')->unique();
+            $table->string('page_id',255)->unique();
             $table->string('text',255);
             $table->string('images',255);
             $table->enum('flg',['1','2','3']);

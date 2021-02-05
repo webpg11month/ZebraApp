@@ -15,8 +15,9 @@
 <body>
     @foreach($pages as $page)
         {{ $page->text }}
-        {{ $page->images }}
+        <img src="{{ asset('strorage/image/'.$page->images) }}" alt="cpt">
     @endforeach
+
 </body>
 </html>
 @endsection
