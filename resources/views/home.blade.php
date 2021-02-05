@@ -13,6 +13,10 @@
 
 </head>
 <body>
+    @foreach($pages as $page)
+        {{ $page->text }}
+        {{ $page->images }}
+    @endforeach
 </body>
 </html>
 @endsection
