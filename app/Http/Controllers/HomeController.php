@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Page;
+use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
 {
@@ -21,8 +23,15 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $req)
     {
-        return view('home');
+        //$keyword = $req->input('keyword');
+
+        #クエリ生成
+        $query = Page::query();
+
+        $pages = $query->orderBy('created_at','desc')->paginate(15);
+
+        return view('home')->with('pages',$pages);
     }
 }

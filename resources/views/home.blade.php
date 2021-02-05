@@ -13,7 +13,15 @@
 
 </head>
 <body>
+<<<<<<< HEAD
     
+=======
+    @foreach($pages as $page)
+        {{ $page->text }}
+        <img src="{{ asset('strorage/image/'.$page->images) }}" alt="cpt">
+    @endforeach
+
+>>>>>>> 27cd3bca0ae7568453f9cf0653e9f0e24f957a1b
 </body>
 </html>
 @endsection
