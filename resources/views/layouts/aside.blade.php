@@ -46,14 +46,16 @@
         </aside>
         <!-- サイドバー終わり -->
         <!-- サーチコンソール -->
+        <div class="searchside">
         <div class="search-wrapper">
             <div class="input-holder">
                 <form action="#" method="GET">
                 <input name="search" type="text" class="search-input" value=""/>
-                <button class="search-icon" onclick="searchToggle(this, event);"><i class="fas fa-search"></i></button>
+                <button class="search-icon" onclick="searchToggle(this, event);"><i class="fas fa-search fa-lg" style="color: #fff;"></i></button>
                 </form>
             </div>
             <span class="close" onclick="searchToggle(this, event);"></span>
+        </div>
         </div>
         <!-- サーチコンソール -->
     </div>
