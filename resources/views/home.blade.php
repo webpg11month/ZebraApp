@@ -10,13 +10,23 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <title>Zebra</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        .test{
+            margin-left: 50vw;
+        }
+    </style>
 
 </head>
 <body>
-    @foreach($pages as $page)
-        {{ $page->text }}
-        <img src="{{ asset('strorage/image/'.$page->images) }}" alt="cpt">
+    @foreach ($pages as $page)
+    <div class="test">
+        <img src="{{ asset('/storage/images/'.$page->images) }}" alt="cpt">
+        <h1>{{ $page->text }}</h1>
+    </div>
     @endforeach
+    <div class="pager-links">
+        {{ $pages->appends(request()->input())->render() }}
+    </div>
 
 </body>
 </html>

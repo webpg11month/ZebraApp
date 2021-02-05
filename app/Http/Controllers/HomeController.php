@@ -15,6 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
+        Log::info('message1');
         $this->middleware('auth');
     }
 
@@ -23,15 +24,16 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index(Request $req)
+    public function index()
     {
+        Log::info('message3');
         //$keyword = $req->input('keyword');
-
         #クエリ生成
         $query = Page::query();
 
         $pages = $query->orderBy('created_at','desc')->paginate(15);
+        Log::info($pages);
 
-        return view('home')->with('pages',$pages);
+        return view('home',compact('pages'));
     }
 }
