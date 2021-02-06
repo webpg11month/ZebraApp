@@ -6,19 +6,8 @@ use Illuminate\Http\Request;
 use App\Page;
 use Illuminate\Support\Facades\Log;
 
-class HomeController extends Controller
+class TopController extends Controller
 {
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        Log::info('message1');
-        $this->middleware('auth');
-    }
-
     /**
      * Show the application dashboard.
      *
@@ -32,8 +21,6 @@ class HomeController extends Controller
         $query = Page::query();
 
         $pages = $query->orderBy('created_at','desc')->paginate(1);
-        Log::info($pages);
-
         return view('home',compact('pages'));
     }
 }
