@@ -1,10 +1,12 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
-use App\User;
+//use App\User;
+use App\Page;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
-
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 /*
 |--------------------------------------------------------------------------
 | Model Factories
@@ -16,12 +18,26 @@ use Illuminate\Support\Str;
 |
 */
 
-$factory->define(User::class, function (Faker $faker) {
+// $factory->define(User::class, function (Faker $faker) {
+//     return [
+//         'name' => $faker->name,
+//         'email' => $faker->unique()->safeEmail,
+//         'email_verified_at' => now(),
+//         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+//         'remember_token' => Str::random(10),
+//     ];
+// });
+
+
+$factory->define(Page::class,static function  (Faker $faker) {
+    $jsons = Storage::get('test.json');
+    $arr = json_decode($jsons,true);
+
     return [
-        'name' => $faker->name,
-        'email' => $faker->unique()->safeEmail,
-        'email_verified_at' => now(),
-        'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-        'remember_token' => Str::random(10),
+        'page_id' => Str::random(10),
+        'text' => $arr['user_info']['TEXT'.mt_rand(1,30).''],
+        'images' => 'dumy'.mt_rand(1,3).'.jpg',
+        'flg' => mt_rand(1,3),
+        'etc' => Str::random(10),
     ];
 });
