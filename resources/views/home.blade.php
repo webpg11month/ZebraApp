@@ -18,6 +18,7 @@
 
 </head>
 <body>
+<<<<<<< HEAD
     @foreach ($pages as $page)
     <div class="main-center-images" >
         <img class="" src="{{ asset('/storage/images/'.$page->images) }}" alt="Responsive image">
@@ -28,6 +29,9 @@
         {{ $pages->appends(request()->input())->render() }}
     </div>
 
+=======
+    
+>>>>>>> ZebraApp/nishide_new
 </body>
 </html>
 @endsection
