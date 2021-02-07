@@ -3,6 +3,7 @@
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 //use App\User;
 use App\Page;
+use App\IncrementText;
 use Faker\Generator as Faker;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Log;
@@ -18,25 +19,13 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 
-// $factory->define(User::class, function (Faker $faker) {
-//     return [
-//         'name' => $faker->name,
-//         'email' => $faker->unique()->safeEmail,
-//         'email_verified_at' => now(),
-//         'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
-//         'remember_token' => Str::random(10),
-//     ];
-// });
-
-
 $factory->define(Page::class,static function  (Faker $faker) {
-    $jsons = Storage::get('test.json');
+    $jsons = Storage::get('datas/test.json');
+    Log::info($jsons);
     $arr = json_decode($jsons,true);
-
     return [
         'page_id' => Str::random(10),
-        'text' => $arr['user_info']['TEXT'.mt_rand(1,30).''],
-        'images' => 'dumy'.mt_rand(1,3).'.jpg',
+        //'text' => $arr['user_info']['TEXT'.mt_rand(1,30).''],
         'flg' => mt_rand(1,3),
         'etc' => Str::random(10),
     ];

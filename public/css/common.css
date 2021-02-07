@@ -6,6 +6,9 @@
 
 /* スマホ処理 iphoneX*/
 @media screen and (min-width:280px) and (max-width:374px) {
+    .pager-links{
+        z-index: 10;
+       }
     a:hover {
         color: #fafafa;
         text-decoration: none;
@@ -288,6 +291,13 @@
   .size{
     font-size: 1.5rem;
   }
+  /*
+  main start
+  edit_manshou
+   */
+   .main-center-images{
+    margin:0 auto;
+   }
     /*
   footer start
   edit_manshou
@@ -314,6 +324,9 @@
   }
 }
 @media screen and (min-width:375px) and (max-width:414px) {
+    .pager-links{
+        z-index: 10;
+       }
     #hamburger-link{
         color: #fafafa;
         text-decoration: none;
@@ -592,6 +605,14 @@
     font-size: 1.5rem;
   }
     /*
+  main start
+  edit_manshou
+   */
+   .main-center-images{
+    margin:0 auto;
+   }
+    /*
+    /*
   footer start
   edit_manshou
   */
@@ -616,6 +637,9 @@
   }
 }
 @media screen and (min-width:415px) and (max-width:425px){
+    .pager-links{
+        z-index: 10;
+       }
     #hamburger-link{
         color: #fafafa;
         text-decoration: none;
@@ -895,6 +919,14 @@
     font-size: 1.5rem;
   }
     /*
+  main start
+  edit_manshou
+   */
+   .main-center-images{
+    margin:0 auto;
+   }
+    /*
+    /*
   footer start
   edit_manshou
   */
@@ -920,6 +952,9 @@
   }
 }
 @media screen and (min-width:426px) and (max-width:766px){
+    .pager-links{
+        z-index: 10;
+       }
     .main-fix{
         margin-top: 7vw;
     }
@@ -1202,6 +1237,17 @@
     font-size: 2.5rem;
   }
     /*
+  main start
+  edit_manshou
+   */
+   .pager-links{
+    z-index: 10;
+   }
+   .main-center-images{
+    margin:0 auto;
+   }
+    /*
+    /*
   footer start
   edit_manshou
   */
@@ -1227,6 +1273,9 @@
   }
 }
 @media screen and (min-width:767px) and (max-width:768px){
+    .pager-links{
+        z-index: 10;
+       }
     #hamburger-link{
         color: #fafafa;
         text-decoration: none;
@@ -1506,6 +1555,14 @@
     font-size: 3rem;
   }
     /*
+  main start
+  edit_manshou
+   */
+   .main-center-images{
+    margin:0 auto;
+   }
+    /*
+    /*
   footer start
   edit_manshou
   */
@@ -1531,6 +1588,9 @@
   }
 }
 @media screen and (min-width:768px) and (max-width:1024px){
+    .pager-links{
+        z-index: 10;
+       }
     #hamburger-link{
         color: #fafafa;
         text-decoration: none;
@@ -1809,6 +1869,14 @@
   .size{
     font-size: 4rem;
   }
+    /*
+  main start
+  edit_manshou
+   */
+   .main-center-images{
+    margin:0 auto;
+   }
+    /*
     /*
   footer start
   edit_manshou

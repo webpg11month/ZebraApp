@@ -31,7 +31,7 @@ class HomeController extends Controller
         #クエリ生成
         $query = Page::query();
 
-        $pages = $query->orderBy('created_at','desc')->paginate(1);
+        $pages = $query->orderBy('id','desc')->paginate(7);
         Log::info($pages);
 
         return view('home',compact('pages'));

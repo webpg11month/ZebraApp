@@ -19,8 +19,8 @@
 </head>
 <body>
     @foreach ($pages as $page)
-    <div class="test">
-        <img src="{{ asset('/storage/images/'.$page->images) }}" alt="cpt">
+    <div class="main-center-images" >
+        <img class="" src="{{ asset('/storage/images/'.$page->images) }}" alt="Responsive image">
         <h1>{{ $page->text }}</h1>
     </div>
     @endforeach
