@@ -18,9 +18,13 @@
 
 </head>
 <body>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7c36c1a7343e53e739e1defa21b00d3f1a714825
     @foreach ($pages as $page)
-    <div class="test">
-        <img src="{{ asset('/storage/images/'.$page->images) }}" alt="cpt">
+    <div class="main-center-images" >
+        <img class="" src="{{ asset('/storage/images/'.$page->images) }}" alt="Responsive image">
         <h1>{{ $page->text }}</h1>
     </div>
     @endforeach
@@ -28,7 +32,13 @@
         {{ $pages->appends(request()->input())->render() }}
     </div>
 
+<<<<<<< HEAD
 
+=======
+=======
+    
+>>>>>>> ZebraApp/nishide_new
+>>>>>>> 7c36c1a7343e53e739e1defa21b00d3f1a714825
 </body>
 </html>
 @endsection

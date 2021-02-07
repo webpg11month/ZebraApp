@@ -15,7 +15,7 @@ class TopController extends Controller
      */
     public function index()
     {
-        Log::info('message3');
+        //Log::info(mt_rand(1,30));
         //$keyword = $req->input('keyword');
         #クエリ生成
         $query = Page::query();
