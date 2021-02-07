@@ -40,7 +40,7 @@ $factory->define(page::class,function(Faker $faker){
     return [
         'page_id' => str::random(10),
         'text' => $datas['Textdata']['TEXT'.mt_rand(1,30).''],
-        'images' => 'dumy'.mt_rand(1,30).'.jpg',
+        // 'images' => 'dumy'.mt_rand(1,30).'.jpg',
         'flg' => mt_rand(1,3),
         'etc' => Str::random(10),
     ];

@@ -20,7 +20,7 @@ class TopController extends Controller
         #クエリ生成
         $query = Page::query();
 
-        $pages = $query->orderBy('created_at','desc')->paginate(1);
+        $pages = $query->orderBy('id','asc')->paginate(7);
         return view('home',compact('pages'));
     }
 }
