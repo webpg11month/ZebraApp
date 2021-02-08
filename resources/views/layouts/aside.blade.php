@@ -17,7 +17,7 @@
             </ul>
             <div class="side-foot">
                 <ul id="side-footer">
-                    <li class="side-contact"><a href="{{}}"> 問い合わせ</a></li>
+                    <li class="side-contact"><a href="{{ action('ContactController@contact')}}"> 問い合わせ</a></li>
                     <div class="login">
                         @guest
 

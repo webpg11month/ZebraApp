@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 
-class ContactConroller extends Controller
+class ContactController extends Controller
 {
     //contact
+    public function contact(){
 
+        return view('contact');
+}
 }
