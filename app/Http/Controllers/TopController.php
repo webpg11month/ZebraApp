@@ -18,15 +18,21 @@ class TopController extends Controller
     {
 
         $page_data = $req->all();
-        $keyword = $page_data['search'];
+        if($page_data){
+            $keyword = $page_data['search'];
+        }else{
+            $keyword = 1;
+        }
+
         $query = Page::query();
         if(!empty($keyword)){
          $query->where('text','like','%'.$keyword.'%');
         }
+
         $pages = $query->orderBy('id','asc')->paginate(7);
         $count=$pages->count();
+
         if($count === 0){
-           Log::info('0だよ');
            $message="0件です";
         }else{
             $message="";
