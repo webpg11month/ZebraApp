@@ -60,7 +60,7 @@
         text-decoration: none;
     }
   /* チェックボックスは非表示に */
-  .chekc-hidden {
+  .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -83,7 +83,7 @@
     ------------------------------*/
 
     /* チェックボックスは非表示に */
-    .chekc-hidden {
+    .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
