@@ -13,13 +13,16 @@ class TopController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $req)
     {
-        //Log::info(mt_rand(1,30));
-        //$keyword = $req->input('keyword');
-        #クエリ生成
+
+        $page_data = $req->all();
+        $keyword = $page_data['search'];
         $query = Page::query();
 
+        if(!empty($keyword)){
+            $query->where('text','like','%'.$keyword.'%');
+        }
         $pages = $query->orderBy('id','asc')->paginate(7);
         return view('home',compact('pages'));
     }
