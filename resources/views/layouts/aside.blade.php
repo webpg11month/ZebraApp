@@ -17,7 +17,7 @@
             </ul>
             <div class="side-foot">
                 <ul id="side-footer">
-                    <li class="side-contact">問い合わせ</li>
+                    <li class="side-contact"><a href="{{ action('ContactController@contact')}}"> 問い合わせ</a></li>
                     <div class="login">
                         @guest
 
@@ -49,7 +49,7 @@
         <div class="searchside">
         <div class="search-wrapper">
             <div class="input-holder">
-                <form action="{{ action('TopController@index') }}" method="GET">
+                <form action="{{ action('ContactController@contact') }}" method="GET">
                 <input name="search" type="text" class="search-input" value=""/>
                 <button class="search-icon" onclick="searchToggle(this, event);"><i class="fas fa-search fa-lg" style="color: #fff;"></i></button>
                 </form>

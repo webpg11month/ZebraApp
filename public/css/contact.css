@@ -1,0 +1,10 @@
+@charset "utf-8";
+input[type="text"]{
+  border: 1px #000 solid ;
+}
+textarea{
+  border: 1px #000 solid  ;
+}
+button{
+  background-color: darkgray;
+}
