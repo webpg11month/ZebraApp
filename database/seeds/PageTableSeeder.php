@@ -14,6 +14,10 @@ class PageTableSeeder extends Seeder
      */
     public function run()
     {
+<<<<<<< HEAD
+
+=======
+>>>>>>> ZebraApp/nishide_new
         //$pages = factory(Page::class,30)->create();
         for ($i=1; $i < 31; $i++) {
             $jsons = Storage::get('datas/test.json');
@@ -25,5 +29,9 @@ class PageTableSeeder extends Seeder
             ]);
             Log::info($aa);
         }
+<<<<<<< HEAD
+
+=======
+>>>>>>> ZebraApp/nishide_new
     }
 }

@@ -1,7 +1,11 @@
 <?php
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
+<<<<<<< HEAD
+
+=======
 //use App\User;
+>>>>>>> ZebraApp/nishide_new
 use App\Page;
 use App\IncrementText;
 use Faker\Generator as Faker;

@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers;
 
-
 use Illuminate\Http\Request;
+use App\Page;
+use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
 {
@@ -11,5 +12,5 @@ class ContactController extends Controller
     public function contact(){
 
         return view('contact');
-}
+    }
 }
