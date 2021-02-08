@@ -2,6 +2,12 @@
     .mobil-setting {
       display: none;
     }
+    .main-center-images{
+    width: 100%;
+    }
+    .main-center-images img {
+      margin-left: 200;
+    }
   }
 
 /* スマホ処理 iphoneX*/
