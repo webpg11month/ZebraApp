@@ -12,8 +12,10 @@
     </div>
     @endforeach
     </div>
+    <div class="links">
     <div class="pager-links">
         {{ $pages->appends(request()->input())->render() }}
+    </div>
     </div>
 </body>
 </html>

@@ -16,18 +16,24 @@ class TopController extends Controller
      */
     public function index(Request $req)
     {
-        //リクエスト取得
-        $page_data = $req->all();
-        $search = new SearchLogic();
-        $pages = $search->search($page_data);
+        //検索値選択
+        $keyword = $req->input('search');
+        //page_tb取得
+        $query = Page::query();
+
+        //空の場合でない場合は、検索される
+        if(!empty($keyword)){
+         $query->where('text','like','%'.$keyword.'%');
+        }
+        $pages = $query->orderBy('id','asc')->paginate(7);
 
         //件数が０の場合は、下記メッセージが走る
-        $count = $pages->count();
-        if ($count === 0) {
-            $message = "0件です";
-        } else {
-            $message = "";
+        $count=$pages->count();
+        if($count === 0){
+           $message="0件です";
+        }else{
+            $message="";
         }
-        return view('home', compact('pages', 'message'));
+        return view('home',compact('pages','message'));
     }
 }
