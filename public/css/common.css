@@ -2,10 +2,16 @@
     .mobil-setting {
       display: none;
     }
+    .top-logo {
+        text-align: center;
+    }
   }
 
 /* スマホ処理 iphoneX*/
 @media screen and (min-width:280px) and (max-width:374px) {
+    .login-header-wrapper{
+        text-align: center;
+    }
     .pager-links{
         z-index: 10;
        }

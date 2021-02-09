@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Page;
+use App\SearchLogic;
 use Illuminate\Support\Facades\Log;
 
 class HomeController extends Controller
@@ -24,16 +25,20 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $req)
     {
-        Log::info('message3');
-        //$keyword = $req->input('keyword');
-        #クエリ生成
-        $query = Page::query();
+        //リクエスト取得
+        $page_data = $req->all();
+        $search = new SearchLogic();
+        $pages = $search->search($page_data);
 
-        $pages = $query->orderBy('id','asc')->paginate(7);
-        Log::info($pages);
-
-        return view('home',compact('pages'));
+        //件数が０の場合は、下記メッセージが走る
+        $count=$pages->count();
+        if($count === 0){
+           $message="0件です";
+        }else{
+            $message="";
+        }
+        return view('home',compact('pages','message'));
     }
 }
