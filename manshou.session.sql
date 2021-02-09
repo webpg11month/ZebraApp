@@ -1,0 +1,1 @@
+show COLUMNS from employee;

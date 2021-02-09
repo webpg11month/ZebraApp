@@ -28,7 +28,6 @@ class TopController extends Controller
         }else{
             $message="";
         }
-
         return view('home',compact('pages','message'));
     }
 }
