@@ -90,7 +90,7 @@
                 <i class="fa fa-search size" id="fadeInOutImg" aria-hidden="true"></i>
             </div>
             <div class="header-fadeImg">
-            <form class="header-fadeImg-1" action="sample01.html" method="get">
+            <form class="header-fadeImg-1" action="{{action('TopController@index')}}" method="get">
                 <input type="text" name="search" value="" placeholder="キーワードを入力">
                 <button>検索</button>
                 </form>
@@ -104,8 +104,6 @@
             {{ config('app.name', 'Zebra') }}
         </a>
         @yield('content')
-        @yield('content-aside')
-        @yield('content-footer')
     </main>
     </div>
     @guest
