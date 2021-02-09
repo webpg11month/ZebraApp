@@ -22,7 +22,8 @@ class SearchLogic extends Model
         if(!empty($keyword)){
             $query->where('text','like','%'.$keyword.'%');
         }
-        $pages = $query->orderBy('id','asc')->paginate(7);
+        $pages = $query->orderBy('id', 'asc')->paginate(7);
+
 
         return $pages;
     }

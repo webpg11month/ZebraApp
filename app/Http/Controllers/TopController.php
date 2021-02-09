@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Page;
 use App\SearchLogic;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\DB;
 
 class TopController extends Controller
 {

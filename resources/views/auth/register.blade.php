@@ -1,4 +1,5 @@
 @extends('layouts.common')
+@include('layouts.common')
 
 @section('content')
 <div class="container">
