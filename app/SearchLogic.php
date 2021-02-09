@@ -8,30 +8,32 @@ use Illuminate\Http\Request;
 
 class SearchLogic extends Model
 {
-
-    public function search($page_data)
-    {
-        if ($page_data) {
+    public function search(Request $req,$page_data){
+        //page_tb取得
+        $query = Page::query();
+        if($page_data){
             //検索値選択
-            $keyword = $page_data['search'];
-        } else {
-
+            $keyword = $req->input('search');
+        }else{
             //全選択
             $keyword = "";
         }
-
-
-
-
-        //page_tb取得
-        $query = Page::query();
         //空の場合でない場合は、検索される
-        if (!empty($keyword)) {
-            $query->where('text', 'like', '%' . $keyword . '%');
+        if(!empty($keyword)){
+            $query->where('text','like','%'.$keyword.'%');
         }
         $pages = $query->orderBy('id', 'asc')->paginate(7);
 
 
         return $pages;
+    }
+
+    public function count($count){
+        if($count === 0){
+            $message="0件です";
+         }else{
+             $message="";
+         }
+         return $message;
     }
 }

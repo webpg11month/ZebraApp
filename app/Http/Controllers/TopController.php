@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Page;
-use Illuminate\Support\Facades\Log;
 use App\SearchLogic;
+use Illuminate\Support\Facades\Log;
 
 class TopController extends Controller
 {
@@ -16,24 +16,12 @@ class TopController extends Controller
      */
     public function index(Request $req)
     {
-        //検索値選択
-        $keyword = $req->input('search');
-        //page_tb取得
-        $query = Page::query();
+        $page_data = $req->all();
+        $search = new SearchLogic();
+        $pages = $search->search($req,$page_data);
+        $count_exist=$pages->count();
+        $message = $search->count($count_exist);
 
-        //空の場合でない場合は、検索される
-        if(!empty($keyword)){
-         $query->where('text','like','%'.$keyword.'%');
-        }
-        $pages = $query->orderBy('id','asc')->paginate(7);
-
-        //件数が０の場合は、下記メッセージが走る
-        $count=$pages->count();
-        if($count === 0){
-           $message="0件です";
-        }else{
-            $message="";
-        }
         return view('home',compact('pages','message'));
     }
 }
