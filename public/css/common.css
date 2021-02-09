@@ -16,15 +16,10 @@
     .main-center-images img {
 
     }
-<<<<<<< HEAD
-
-}
-=======
     .top-logo {
         text-align: center;
     }
   }
->>>>>>> 2273b4f877be8df8cc2ec6b8a31683632a15b4f2
 
 /* スマホ処理 iphoneX*/
 @media screen and (min-width:280px) and (max-width:374px) {
@@ -114,11 +109,6 @@
     ------------------------------*/
 
     /* チェックボックスは非表示に */
-<<<<<<< HEAD
-    .check-hidden {
-        /*チェックボックス削除*/
-        display: none;
-=======
     .chekc-hidden {
       /*チェックボックス削除*/
       display: none;
@@ -413,7 +403,6 @@
     #hamburger-link{
         color: #fafafa;
         text-decoration: none;
->>>>>>> 2273b4f877be8df8cc2ec6b8a31683632a15b4f2
     }
 
     .hamburger-none {
@@ -651,13 +640,6 @@
   main start
   edit_manshou
    */
-<<<<<<< HEAD
-    .main-center-images img{
-        margin-top:400px;
-        
-    }
-
-=======
        /* ログイン画面 */
        .login-header-wrapper{
         font-family: 'Philosopher', serif;
@@ -704,7 +686,6 @@
     margin:0 auto;
    }
     /*
->>>>>>> 2273b4f877be8df8cc2ec6b8a31683632a15b4f2
     /*
   footer start
   edit_manshou
@@ -1055,12 +1036,6 @@
   main start
   edit_manshou
    */
-<<<<<<< HEAD
-    .main-center-images {
-        margin: 0 auto;
-    }
-
-=======
        /* ログイン画面 */
        .login-header-wrapper{
         font-family: 'Philosopher', serif;
@@ -1106,7 +1081,6 @@
    .main-center-images{
     margin:0 auto;
    }
->>>>>>> 2273b4f877be8df8cc2ec6b8a31683632a15b4f2
     /*
     /*
   footer start
@@ -1458,12 +1432,6 @@
   main start
   edit_manshou
    */
-<<<<<<< HEAD
-    .main-center-images {
-        margin: 0 auto;
-    }
-
-=======
        /* ログイン画面 */
        .login-header-wrapper{
         font-family: 'Philosopher', serif;
@@ -1511,7 +1479,6 @@
    .main-center-images{
     margin:0 auto;
    }
->>>>>>> 2273b4f877be8df8cc2ec6b8a31683632a15b4f2
     /*
     /*
   footer start
@@ -2229,12 +2196,6 @@
   main start
   edit_manshou
    */
-<<<<<<< HEAD
-    .main-center-images {
-        margin: 0 auto;
-    }
-
-=======
        /* ログイン画面 */
        .login-header-wrapper{
         font-family: 'Philosopher', serif;
@@ -2285,7 +2246,6 @@
    .main-center-images{
     margin:0 auto;
    }
->>>>>>> 2273b4f877be8df8cc2ec6b8a31683632a15b4f2
     /*
     /*
   footer start
@@ -2638,12 +2598,6 @@
   main start
   edit_manshou
    */
-<<<<<<< HEAD
-    .main-center-images {
-        margin: 0 auto;
-    }
-
-=======
        /* ログイン画面 */
        .login-header-wrapper{
         font-family: 'Philosopher', serif;
@@ -2691,7 +2645,6 @@
    .main-center-images{
     margin:0 auto;
    }
->>>>>>> 2273b4f877be8df8cc2ec6b8a31683632a15b4f2
     /*
     /*
   footer start
