@@ -27,7 +27,9 @@
     <div class="pager-links">
         {{ $pages->appends(request()->input())->render() }}
     </div>
-
+    <div class="testaaa" style="margin-left:50vw;font-size:20px">
+        {{ $message }}
+    </div>
 </body>
 </html>
 @endsection
