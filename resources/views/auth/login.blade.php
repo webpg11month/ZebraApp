@@ -1,5 +1,6 @@
 @extends('layouts.common')
 @include('layouts.common')
+<body>
 <div class="login-header-wrapper">
     <div class="login-header" >{{ __('Zebra') }}</div>
     <div class="login-header" >{{ __('ログイン') }}</div>
@@ -37,4 +38,5 @@
     </form>
 </div>
 
+</body>
 

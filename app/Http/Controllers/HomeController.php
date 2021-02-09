@@ -33,6 +33,7 @@ class HomeController extends Controller
         $pages = $search->search($page_data);
 
         //件数が０の場合は、下記メッセージが走る
+<<<<<<< HEAD
         $count = $pages->count();
         if ($count === 0) {
             $message = "0件です";
@@ -40,5 +41,14 @@ class HomeController extends Controller
             $message = "";
         }
         return view('home', compact('pages', 'message'));
+=======
+        $count=$pages->count();
+        if($count === 0){
+           $message="0件です";
+        }else{
+            $message="";
+        }
+        return view('home',compact('pages','message'));
+>>>>>>> ZebraApp/manshou_layout_top
     }
 }

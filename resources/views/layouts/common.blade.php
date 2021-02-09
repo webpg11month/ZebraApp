@@ -1,9 +1,10 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
 <head>
+<<<<<<< HEAD
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+=======
+>>>>>>> ZebraApp/manshou_layout_top
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Zebra') }}</title>
@@ -23,6 +24,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <div id="app">
             <div class="container">
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -61,6 +63,9 @@
             </div>
         @yield('content')
     </div>
+=======
+        @yield('content')
+>>>>>>> ZebraApp/manshou_layout_top
 </body>
 
 </html>
