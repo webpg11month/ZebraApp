@@ -1,4 +1,41 @@
 @charset "utf-8";
+@media screen and (min-width:1025px) {
+    .all {
+        padding-left: 18vw;
+    }
+
+    .mobil-setting {
+        display: none;
+    }
+
+    .main-center-images {
+        text-align: center;
+        /* padding-left: 1000px; */
+
+    }
+
+
+    .main-center-images img {
+        border: 1px solid #5c5555;
+        width: 900px;
+        height: 700px;
+        object-fit: cover;
+        margin: 50px;
+    }
+
+    .links {
+        margin-left: 50%;
+    }
+
+    .page-link {
+        width: auto;
+
+    }
+
+    .top-logo {
+        text-align: center;
+    }
+}
 
 
 /* スマホ処理 iphoneX*/
