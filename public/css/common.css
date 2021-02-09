@@ -1,11 +1,42 @@
+@charset "utf-8";
 @media screen and (min-width:1025px) {
-    .mobil-setting {
-      display: none;
+    .all {
+        padding-left: 18vw;
     }
+
+    .mobil-setting {
+        display: none;
+    }
+
+    .main-center-images {
+        text-align: center;
+        /* padding-left: 1000px; */
+
+    }
+
+
+    .main-center-images img {
+        border: 1px solid #5c5555;
+        width: 900px;
+        height: 700px;
+        object-fit: cover;
+        margin: 50px;
+    }
+
+    .links {
+        margin-left: 50%;
+    }
+
+    .page-link {
+        width: auto;
+
+    }
+
     .top-logo {
         text-align: center;
     }
-  }
+}
+
 
 /* スマホ処理 iphoneX*/
 @media screen and (min-width:280px) and (max-width:374px) {
@@ -57,7 +88,7 @@
         text-decoration: none;
     }
   /* チェックボックスは非表示に */
-  .chekc-hidden {
+  .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -80,7 +111,7 @@
     ------------------------------*/
 
     /* チェックボックスは非表示に */
-    .chekc-hidden {
+    .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -277,14 +308,14 @@
     background-color: rgba(255, 255, 255, .9);
     border: 1px #fafafa solid;
     border-radius: 10px;
-    width: 50vw;
+    width: 40vw;
     height: 10vw;
   }
   .header-fadeImg-1 {
     margin-left: 10vw;
   }
   button{
-    width: 14vw;
+    width: 15vw;
     height: 10vw;
     font-weight: bold;
     border-radius: 10px;
@@ -298,7 +329,7 @@
   edit_manshou
    */
        /* ログイン画面 */
-       .login-header-wrapper{
+    .login-header-wrapper{
         font-family: 'Philosopher', serif;
         font-weight: bold;
         font-size: 7.5vw;
@@ -306,7 +337,7 @@
         text-align: center;
     }
     .login-header{
-    margin:5vw;
+        margin:5vw;
     }
     .login-input-wrapper {
         display: flex;
@@ -318,7 +349,7 @@
     .login-button{
         width: 100%;
         height: 15vw;
-        margin-top: 10vw;
+        margin-top: 30vw;
         color: #fafafa;
         border-radius: 10px;
         background-color: rgb(0, 0, 0);
@@ -412,7 +443,7 @@
         text-decoration: none;
     }
   /* チェックボックスは非表示に */
-  .chekc-hidden {
+  .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -435,7 +466,7 @@
     ------------------------------*/
 
     /* チェックボックスは非表示に */
-    .chekc-hidden {
+    .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -767,7 +798,7 @@
         text-decoration: none;
     }
   /* チェックボックスは非表示に */
-  .chekc-hidden {
+  .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -790,7 +821,7 @@
     ------------------------------*/
 
     /* チェックボックスは非表示に */
-    .chekc-hidden {
+    .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -1127,7 +1158,7 @@
         text-decoration: none;
     }
   /* チェックボックスは非表示に */
-  .chekc-hidden {
+  .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -1150,7 +1181,7 @@
     ------------------------------*/
 
     /* チェックボックスは非表示に */
-    .chekc-hidden {
+    .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -1441,7 +1472,7 @@
     font-size: 10px;
   }
 }
-@media screen and (min-width:767px) and (max-width:768px){
+@media screen and (min-width:767px) and (max-width:1024px){
     .pager-links{
         z-index: 10;
        }
@@ -1486,7 +1517,7 @@
         text-decoration: none;
     }
   /* チェックボックスは非表示に */
-  .chekc-hidden {
+  .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -1509,369 +1540,7 @@
     ------------------------------*/
 
     /* チェックボックスは非表示に */
-    .chekc-hidden {
-      /*チェックボックス削除*/
-      display: none;
-  }
-
-  .hamburger-none {
-      display: contents;
-  }
-  .header-nav-list {
-      display: none;
-  }
-  .home-content {
-      display: none;
-  }
-
-  .hamburger-open {
-      /*ハンバーガーアイコンの設置スペース ハンバーガーアイコンのフレックス指定 fixedで固定*/
-      width: 30%;
-      height: 7.5vw;
-      margin-top: 4vw;
-      margin-left: 3.5vw;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-  }
-
-  .hamburger-open span,
-  .hamburger-open span:before,
-  .hamburger-open span:after {
-      /* ハンバーガーメニューのアイコンの設定 */
-      content: '';
-      /*空白領域作成*/
-      display: block;
-      /*縦並びにする*/
-      height: 1vw;
-      /*高さ幅3pxに設定*/
-      width: 6vw;
-      /*横幅3pxに設定*/
-      border-radius: 1vw;
-      /*丸みを3pxにする*/
-      background: black;
-      /*#333に色指定*/
-      transition: 0.5s;
-      /*0.5s書けて×になる*/
-      position: absolute;
-      /*絶対配置(くっついてしまう)*/
-  }
-
-  .hamburger-open span:before {
-      /* 三本線のうち一番上の棒の位置調整 */
-      bottom: 2vw;
-      /*下の幅を8px*/
-  }
-
-  .hamburger-open span:after {
-      top: 2vw;
-  }
-
-  #hamburger-check:checked ~ .hamburger-open span {
-      background: rgba(255, 255, 255, 0);
-  }
-
-  /* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
-  #hamburger-check:checked ~ .hamburger-open span::before {
-      bottom: 0;
-      transform: rotate(45deg);
-  }
-
-  #hamburger-check:checked ~ .hamburger-open span::after {
-      top: 0;
-      transform: rotate(-45deg);
-  }
-
-  .hamburger-item {
-      list-style: none;
-  }
-
-  .hamburger-close {
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.3);
-      position: fixed;
-      top: 0;
-      right: 100%;
-      z-index: 1;
-      transition: .5s;
-  }
-  #hamburger-check:checked ~ .hamburger-close {
-      left: 0;
-  }
-  .hamburger-content {
-      overflow-y: scroll;
-      flex: display;
-      width: 50%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      right: 100%;
-      background-color: #5c5555;
-      opacity: 0.8;
-      transition: .5s;
-      flex-wrap: wrap;
-      z-index: 30;
-  }
-  #hamburger-check:checked ~ .hamburger-content {
-      right:50%;
-  }
-
-  .hamburger-content li.hamburger-item , li.hamburger-item-1 {
-      border-bottom: 2px solid #fafafa;
-      padding-top: 8vw;
-      padding-bottom: 6vw;
-      background-color: #5c5555;
-      color: #000000;
-      margin:0 auto;
-  }
-  .hamburger-item a{
-      margin-left: 2vw;
-      font-size: 20px;
-      text-decoration: none;
-      color: #fafafa;
-  }
-  .hamburger-item-1 a{
-      margin-left: 12vw;
-      font-size: 17px;
-      text-decoration: none;
-      padding-left: 20vw;
-      text-align: right;
-      color: rgba(255, 255, 255, 0.8);
-  }
-  .hamburger-item-footer{
-      margin-top: 40vw;
-  }
-  .hamburger-item-2 a{
-      text-decoration: none;
-      color: rgba(255, 255, 255, 0.8);
-      background-color: #5c5555;
-      margin:0 auto;
-      margin-left: 20vw;
-      font-size: 17px;
-  }
-  li.hamburger-item-2{
-      border-top:2px solid #fafafa ;
-      padding-top: 15%;
-      padding-bottom: 15%;
-      text-decoration: none;
-      list-style: none;
-  }
-
-  /* --------完了--------- */
-  .header-right {
-    position: absolute;
-    width: 25%;
-    background-color: gray;
-    z-index: 30;
-  }
-  .flex-search {
-    display: flex;
-  }
-  .header-center{
-    margin-left: 2vw;
-  }
-  .header-fadeImg {
-    display: none;
-  }
-  #fadeInOutImg {
-    width: 8vw;
-    position: absolute;
-    margin-top: 6vw;
-    margin-left: 86vw;
-    z-index: 15;
-  }
-  #fadeInOutImg1 {
-    width: 8vw;
-    position: absolute;
-    margin-top: 3vw;
-    margin-left: 86vw;
-    z-index: 15;
-  }
-  .header-fadeImg{
-    width: 100%;
-    height: 22vw;
-    padding: 5vw;
-    background-color: rgba(31, 25, 155, .5);
-    z-index: 10;
-  }
-  .hamburger {
-    position: absolute;
-    margin-left: 5vw;
-    margin-top: 4vw;
-    z-index: 1;
-  }
-
-  input[type="text"] {
-    background-color: rgba(255, 255, 255, .9);
-    border: 1px #fafafa solid;
-    border-radius: 10px;
-    width: 50vw;
-    height: 10vw;
-
-  }
-  .header-fadeImg-1 {
-    margin-left: 10vw;
-  }
-  button{
-    width: 14vw;
-    height: 10vw;
-    font-weight: bold;
-    border-radius: 10px;
-    background: #fafafa;
-  }
-  .size{
-    font-size: 3rem;
-  }
-    /*
-  main start
-  edit_manshou
-   */
-       /* ログイン画面 */
-       .login-header-wrapper{
-        font-family: 'Philosopher', serif;
-        font-weight: bold;
-        font-size: 7.5vw;
-        margin: 10vw;
-        text-align: center;
-    }
-    .login-header{
-        margin:5vw;
-    }
-    .login-input-wrapper {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .login-button{
-        width: 80%;
-        height: 10vw;
-        margin-top: 10vw;
-        color: #fafafa;
-        border-radius: 10px;
-        font-size: 3.5vw;
-        background-color: rgb(0, 0, 0);
-    }
-    .login-link{
-        margin-top: 5vw;
-    }
-    .login-button-reset{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    input.login-input {
-        margin-top: 10vw;
-        width: 80vw;
-        font-size: 3.5vw;
-        border-bottom: 1px rgba(0, 0, 0, 0.7) solid;
-        text-align: center;
-    }
-   .main-center-images{
-    margin:0 auto;
-   }
-   .main-center-images{
-    margin:0 auto;
-   }
-    /*
-    /*
-  footer start
-  edit_manshou
-  */
-  body,
-  #wrapper {
-    display: flex;
-    flex-direction: column;
-    /* メインの間隔を修正できる */
-    min-height: 100vh;
-  }
-  footer {
-    margin-top: auto;
-    height: 22vw;
-    background-color: #5c5555;
-  }
-  .footer-icon-flex{
-    margin: 3vw;
-
-  }
-  .copy-light {
-    background-color: aqua;
-    font-size: 10px;
-  }
-}
-@media screen and (min-width:768px) and (max-width:1024px){
-    .pager-links{
-        z-index: 10;
-       }
-    #hamburger-link{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link1{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link2{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link3{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link4{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link5{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link6{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link7{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link8{
-        color: #fafafa;
-        text-decoration: none;
-    }
-    #hamburger-link9{
-        color: #fafafa;
-        text-decoration: none;
-    }
-  /* チェックボックスは非表示に */
-  .chekc-hidden {
-      /*チェックボックス削除*/
-      display: none;
-  }
-  .mobil-setting{
-    width: 100%;
-    height: 22vw;
-    position: fixed;
-    background-color: #5c5555;
-  }
-  .header-search-1{
-    font-family: 'Philosopher', serif;
-    font-weight: bold;
-    font-size: 7.5vw;
-    position: absolute;
-    margin-left: 40vw;
-    margin-top: 5vw;
-  }
-    /*------------------------------
-    ハンバーガー実装
-    ------------------------------*/
-
-    /* チェックボックスは非表示に */
-    .chekc-hidden {
+    .check-hidden {
       /*チェックボックス削除*/
       display: none;
   }
@@ -2068,6 +1737,7 @@
     background-color: rgba(255, 255, 255, .9);
     border: 1px #fafafa solid;
     border-radius: 10px;
+    font-size: 2.5rem;
     width: 50vw;
     height: 10vw;
 
@@ -2156,8 +1826,5 @@
   .footer-icon-flex{
     margin: 3vw;
   }
-  .copy-light {
-    background-color: aqua;
-    font-size: 10px;
-  }
+
 }

@@ -28,7 +28,7 @@
         <div class="mobil-setting">
         <nav class="flex-search">
             <div class="hamburger">
-                <input type="checkbox" id="hamburger-check" class="chekc-hidden">
+                <input type="checkbox" id="hamburger-check" class="check-hidden">
                 <label for="hamburger-check" class="hamburger-open">
                 <span></span>
                 </label>
@@ -84,7 +84,7 @@
                     </div>
                     </ul>
                 </nav>
-            </div>
+            </div> 
             <h1 class="header-search-1">Zebra</h1>
             <div class="switch-btn">
                 <i class="fa fa-search size" id="fadeInOutImg" aria-hidden="true"></i>
