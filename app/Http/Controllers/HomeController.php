@@ -23,7 +23,7 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * @return \Illuminate\Contracts\Support\Renderable
+     * 
      */
     public function index(Request $req)
     {
@@ -33,12 +33,12 @@ class HomeController extends Controller
         $pages = $search->search($page_data);
 
         //件数が０の場合は、下記メッセージが走る
-        $count=$pages->count();
-        if($count === 0){
-           $message="0件です";
-        }else{
-            $message="";
+        $count = $pages->count();
+        if ($count === 0) {
+            $message = "0件です";
+        } else {
+            $message = "";
         }
-        return view('home',compact('pages','message'));
+        return view('home', compact('pages', 'message'));
     }
 }

@@ -84,7 +84,7 @@
                     </div>
                     </ul>
                 </nav>
-            </div>
+            </div> 
             <h1 class="header-search-1">Zebra</h1>
             <div class="switch-btn">
                 <i class="fa fa-search size" id="fadeInOutImg" aria-hidden="true"></i>

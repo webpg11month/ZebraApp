@@ -1,5 +1,5 @@
 @extends('layouts.common')
-@include('layouts.common')
+{{-- @include('layouts.common') --}}
 <body>
   <h1 class="top-logo">Zebra</h1>
   <h2 class="contact">問い合わせ</h2>
