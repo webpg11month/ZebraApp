@@ -28,7 +28,7 @@
         <div class="mobil-setting">
         <nav class="flex-search">
             <div class="hamburger">
-                <input type="checkbox" id="hamburger-check" class="chekc-hidden">
+                <input type="checkbox" id="hamburger-check" class="check-hidden">
                 <label for="hamburger-check" class="hamburger-open">
                 <span></span>
                 </label>
