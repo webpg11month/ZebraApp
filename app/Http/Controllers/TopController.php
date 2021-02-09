@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Page;
+use App\SearchLogic;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\DB;
 
@@ -16,27 +17,12 @@ class TopController extends Controller
      */
     public function index(Request $req)
     {
-
         $page_data = $req->all();
-        if($page_data){
-            $keyword = $page_data['search'];
-        }else{
-            $keyword = 1;
-        }
+        $search = new SearchLogic();
+        $pages = $search->search($req,$page_data);
+        $count_exist=$pages->count();
+        $message = $search->count($count_exist);
 
-        $query = Page::query();
-        if(!empty($keyword)){
-         $query->where('text','like','%'.$keyword.'%');
-        }
-
-        $pages = $query->orderBy('id','asc')->paginate(7);
-        $count=$pages->count();
-
-        if($count === 0){
-           $message="0件です";
-        }else{
-            $message="";
-        }
         return view('home',compact('pages','message'));
     }
 }
