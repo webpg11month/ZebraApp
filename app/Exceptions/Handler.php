@@ -3,7 +3,9 @@
 namespace App\Exceptions;
 
 use Exception;
+use \Illuminate\Session\TokenMismatchException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Log;
 
 class Handler extends ExceptionHandler
 {
@@ -46,6 +48,11 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        Log::info($exception);
+        if ($exception instanceof TokenMismatchException){
+            session()->flash('csrfError', true);
+            return redirect('');
+        }
         return parent::render($request, $exception);
     }
 }

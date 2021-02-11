@@ -14,8 +14,6 @@
         /* padding-left: 1000px; */
 
     }
-
-
     .main-center-images img {
         border: 1px solid #5c5555;
         width: 900px;
@@ -32,7 +30,6 @@
         width: auto;
 
     }
-
     /* コンタクト */
     .top-logo {
         margin-top: 10%;
@@ -613,7 +610,7 @@
         }
     
         .textarea-wrap textarea {
-            padding: 2vw;
+            padding: 5vw;
             border: 2px solid #5c5555;
             width: 70vw;
             border-radius: 50px;
@@ -1038,7 +1035,7 @@
         }
     
         .textarea-wrap textarea {
-            padding: 2vw;
+            padding: 5vw;
             border: 2px solid #5c5555;
             width: 70vw;
             border-radius: 50px;
@@ -1520,7 +1517,7 @@
         }
     
         .textarea-wrap textarea {
-            padding: 2vw;
+            padding: 5vw;
             border: 2px solid #5c5555;
             width: 35%;
             border-radius: 50px;

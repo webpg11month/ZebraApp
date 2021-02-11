@@ -13,7 +13,6 @@ class ContactController extends Controller
 {
     //contact
     public function contact(){
-
         return view('contact');
     }
     //mail
@@ -27,7 +26,8 @@ class ContactController extends Controller
         //アプリ作成
         $contact = $request;
         Mail::to($contact->email)->send(new ContactMail($contact));
-
+        // 二重送信対策
+        $request->session()->regenerateToken();
         //問い合わせ内容をcontactテーブルに追加
         return view('home',compact('pages','message'));
     }
