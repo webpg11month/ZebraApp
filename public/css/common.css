@@ -32,102 +32,144 @@
         width: auto;
 
     }
-/* コンタクト */
+
+    /* コンタクト */
     .top-logo {
+        margin-top: 10%;
         text-align: center;
-        margin-top: 50px;
         font-size: 50px;
         font-weight: bold;
     }
+
     .contact {
         font-size: 30px;
         font-weight: bold;
         text-align: center;
     }
+
     .name {
         text-align: center;
         padding: 30px 0px;
     }
+
     .fname {
         border-bottom: 1px solid #5c5555;
-        margin-right: 7px;
+        margin-right: 2%;
+        margin-left: 1%;
+        width: 15%;
     }
+
     .lname {
         border-bottom: 1px solid #5c5555;
-        margin-left: 7px;
+        margin-left: 3%;
+        width: 15%;
     }
+
     .contact-mail {
         display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-left: 35%;
+        flex-direction: column;
+        width: 35%;
+        margin-left: 33%;
 
     }
+
     .contact-mail-form {
         text-align: center;
         border-bottom: 1px solid #5c5555;
+        padding-top: 10px;
     }
+
     .contact-remail-form {
         text-align: center;
         border-bottom: 1px solid #5c5555;
+        padding-top: 10px;
     }
-    .item-name {
-    }
-    .textarea-wrap textarea{
-        
-        border: 2px solid #5c5555;
-        border-radius: 50px;
-        margin-left: 25%;
-    }
-/* ログイン */
 
-.login-header-wrapper{
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 50px;
-}
-.login-header-logo{
-    font-size: 50px;
-}
-.login-header-wrapper{
-    text-align: center;
-}
-.login-header{
-    text-align: center;
-}
-.login-input-wrapper{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 10%;
-}
-.login-input{
-    text-align: center;
-    border-bottom: 1px solid #5c5555;
-    width: 30%;
-    margin-left: 35vw;
-    padding-top: 10px;
-}
-.login-button-reset{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.login-button{
-    margin-top: 25px;
-    margin-left: 35%;
-    height: 40px;
-    width: 30%;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 1);
-}
-.login-link{
-    margin-top: 10px;
-}
-placeholder{
-    text-align: center;
-}
-/* ログインここまで */
+    .item-name1 {
+        padding-top: 30px;
+        margin-left: 35%;
+    }
+
+    .textarea-wrap textarea {
+        padding: 2vw;
+        border: 2px solid #5c5555;
+        width: 35%;
+        border-radius: 50px;
+        margin-left: 33%;
+    }
+
+    .submit-wrap {
+        color: #fff;
+        background-color: black;
+        text-align: center;
+        width: 35%;
+        margin-left: 33%;
+        height: 50px;
+        padding-top: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+/* 問い合わせここまで */
+    /* ログイン */
+
+    .login-header-wrapper {
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .login-header-logo {
+        font-size: 50px;
+    }
+
+    .login-header-wrapper {
+        text-align: center;
+    }
+
+    .login-header {
+        text-align: center;
+    }
+
+    .login-input-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .login-input {
+        text-align: center;
+        border-bottom: 1px solid #5c5555;
+        width: 30%;
+        margin-left: 35vw;
+        padding-top: 10px;
+    }
+
+    .login-button-reset {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login-button {
+        margin-top: 25px;
+        margin-left: 35%;
+        height: 40px;
+        width: 30%;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 1);
+    }
+
+    .login-link {
+        margin-top: 10px;
+    }
+
+    placeholder {
+        text-align: center;
+    }
+
+    /* ログインここまで */
 
 
 }
@@ -432,7 +474,7 @@ placeholder{
         z-index: 1;
     }
 
-    input[type="text"] {
+    input[type="text"].header-search {
         background-color: rgba(255, 255, 255, .9);
         border: 1px #fafafa solid;
         border-radius: 10px;
@@ -512,6 +554,84 @@ placeholder{
     .main-center-images {
         margin: 0 auto;
     }
+         /* コンタクト */
+         .top-logo {
+            margin-top: 10%;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    
+        .contact {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        .name {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    
+        .fname {
+            border-bottom: 1px solid #5c5555;
+            margin-right: 8vw;
+            margin-left: 4vw;
+            width: 25vw;
+        }
+    
+        .lname {
+            border-bottom: 1px solid #5c5555;
+            margin-left: 11vw;
+            width: 25vw;
+        }
+    
+        .contact-mail {
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+            margin-left: 15vw;
+    
+        }
+    
+        .contact-mail-form {
+            text-align: center;
+            border-bottom: 1px solid #5c5555;
+
+        }
+    
+        .contact-remail-form {
+            text-align: center;
+            border-bottom: 1px solid #5c5555;
+            padding-top: 10px;
+        }
+    
+        .item-name1 {
+            padding-top: 30px;
+            margin-left: 35%;
+        }
+    
+        .textarea-wrap textarea {
+            padding: 2vw;
+            border: 2px solid #5c5555;
+            width: 70vw;
+            border-radius: 50px;
+            margin-left: 15vw;
+        }
+    
+        .submit-wrap {
+            color: #fff;
+            background-color: black;
+            text-align: center;
+            width: 70%;
+            margin-left: 16vw;
+            height: 50px;
+            padding-top: 15px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
 
     /*
   footer start
@@ -834,7 +954,7 @@ placeholder{
         z-index: 1;
     }
 
-    input[type="text"] {
+    input[type="text"].header-search {
         background-color: rgba(255, 255, 255, .9);
         border: 1px #fafafa solid;
         border-radius: 10px;
@@ -859,6 +979,85 @@ placeholder{
         font-size: 1.5rem;
     }
 
+        /* コンタクト 375~414 */
+        .top-logo {
+            margin-top: 10%;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    
+        .contact {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        .name {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    
+        .fname {
+            border-bottom: 1px solid #5c5555;
+            margin-right: 8vw;
+            margin-left: 4vw;
+            width: 25vw;
+        }
+    
+        .lname {
+            border-bottom: 1px solid #5c5555;
+            margin-left: 11vw;
+            width: 25vw;
+        }
+    
+        .contact-mail {
+            display: flex;
+            flex-direction: column;
+            width: 70vw;
+            margin-left: 15vw;
+    
+        }
+    
+        .contact-mail-form {
+            text-align: center;
+            border-bottom: 1px solid #5c5555;
+
+        }
+    
+        .contact-remail-form {
+            text-align: center;
+            border-bottom: 1px solid #5c5555;
+            padding-top: 10px;
+        }
+    
+        .item-name1 {
+            padding-top: 30px;
+            margin-left: 35%;
+        }
+    
+        .textarea-wrap textarea {
+            padding: 2vw;
+            border: 2px solid #5c5555;
+            width: 70vw;
+            border-radius: 50px;
+            margin-left: 15vw;
+        }
+    
+        .submit-wrap {
+            color: #fff;
+            background-color: black;
+            text-align: center;
+            width: 70%;
+            margin-left: 16vw;
+            height: 50px;
+            padding-top: 15px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    /* 問い合わせここまで */
     /*
   main start
   edit_manshou
@@ -1238,7 +1437,7 @@ placeholder{
         z-index: 1;
     }
 
-    input[type="text"] {
+    input[type="text"].header-search {
         background-color: rgba(255, 255, 255, .9);
         border: 1px #fafafa solid;
         border-radius: 10px;
@@ -1263,6 +1462,84 @@ placeholder{
         font-size: 1.5rem;
     }
 
+        /* コンタクト */
+        .top-logo {
+            margin-top: 10%;
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+        }
+    
+        .contact {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+    
+        .name {
+            text-align: center;
+            padding: 30px 0px;
+        }
+    
+        .fname {
+            border-bottom: 1px solid #5c5555;
+            margin-right: 2%;
+            margin-left: 1%;
+            width: 15%;
+        }
+    
+        .lname {
+            border-bottom: 1px solid #5c5555;
+            margin-left: 3%;
+            width: 15%;
+        }
+    
+        .contact-mail {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            margin-left: 33%;
+    
+        }
+    
+        .contact-mail-form {
+            text-align: center;
+            border-bottom: 1px solid #5c5555;
+            padding-top: 10px;
+        }
+    
+        .contact-remail-form {
+            text-align: center;
+            border-bottom: 1px solid #5c5555;
+            padding-top: 10px;
+        }
+    
+        .item-name1 {
+            padding-top: 30px;
+            margin-left: 35%;
+        }
+    
+        .textarea-wrap textarea {
+            padding: 2vw;
+            border: 2px solid #5c5555;
+            width: 35%;
+            border-radius: 50px;
+            margin-left: 33%;
+        }
+    
+        .submit-wrap {
+            color: #fff;
+            background-color: black;
+            text-align: center;
+            width: 35%;
+            margin-left: 33%;
+            height: 50px;
+            padding-top: 15px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        /* 問い合わせここまで */
     /*
   main start
   edit_manshou
@@ -1647,7 +1924,7 @@ placeholder{
         z-index: 1;
     }
 
-    input[type="text"] {
+    input[type="text"].header-search {
         background-color: rgba(255, 255, 255, .9);
         border: 1px #fafafa solid;
         border-radius: 10px;
@@ -1730,7 +2007,84 @@ placeholder{
     .main-center-images {
         margin: 0 auto;
     }
-
+            /* コンタクト 375~414 */
+            .top-logo {
+                margin-top: 10%;
+                text-align: center;
+                font-size: 50px;
+                font-weight: bold;
+            }
+        
+            .contact {
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+            }
+        
+            .name {
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 10px;
+            }
+        
+            .fname {
+                border-bottom: 1px solid #5c5555;
+                margin-right: 8vw;
+                margin-left: 4vw;
+                width: 25vw;
+            }
+        
+            .lname {
+                border-bottom: 1px solid #5c5555;
+                margin-left: 11vw;
+                width: 25vw;
+            }
+        
+            .contact-mail {
+                display: flex;
+                flex-direction: column;
+                width: 70vw;
+                margin-left: 15vw;
+        
+            }
+        
+            .contact-mail-form {
+                text-align: center;
+                border-bottom: 1px solid #5c5555;
+    
+            }
+        
+            .contact-remail-form {
+                text-align: center;
+                border-bottom: 1px solid #5c5555;
+                padding-top: 10px;
+            }
+        
+            .item-name1 {
+                padding-top: 30px;
+                margin-left: 35%;
+            }
+        
+            .textarea-wrap textarea {
+                padding: 2vw;
+                border: 2px solid #5c5555;
+                width: 70vw;
+                border-radius: 50px;
+                margin-left: 15vw;
+            }
+        
+            .submit-wrap {
+                color: #fff;
+                background-color: black;
+                text-align: center;
+                width: 70%;
+                margin-left: 16vw;
+                height: 50px;
+                padding-top: 15px;
+                margin-top: 30px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+            }
     /*
     /*
   footer start
@@ -2054,7 +2408,7 @@ placeholder{
         z-index: 1;
     }
 
-    input[type="text"] {
+    input[type="text"].header-search {
         background-color: rgba(255, 255, 255, .9);
         border: 1px #fafafa solid;
         border-radius: 10px;
@@ -2138,7 +2492,84 @@ placeholder{
     .main-center-images {
         margin: 0 auto;
     }
+    /* コンタクト */
+    .top-logo {
+        margin-top: 10%;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
 
+    .contact {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .name {
+        text-align: center;
+        padding: 30px 0px;
+    }
+
+    .fname {
+        border-bottom: 1px solid #5c5555;
+        margin-right: 2%;
+        margin-left: 1%;
+        width: 15%;
+    }
+
+    .lname {
+        border-bottom: 1px solid #5c5555;
+        margin-left: 3%;
+        width: 15%;
+    }
+
+    .contact-mail {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin-left: 33%;
+
+    }
+
+    .contact-mail-form {
+        text-align: center;
+        border-bottom: 1px solid #5c5555;
+        padding-top: 10px;
+    }
+
+    .contact-remail-form {
+        text-align: center;
+        border-bottom: 1px solid #5c5555;
+        padding-top: 10px;
+    }
+
+    .item-name1 {
+        padding-top: 30px;
+        margin-left: 35%;
+    }
+
+    .textarea-wrap textarea {
+        padding: 2vw;
+        border: 2px solid #5c5555;
+        width: 35%;
+        border-radius: 50px;
+        margin-left: 33%;
+    }
+
+    .submit-wrap {
+        color: #fff;
+        background-color: black;
+        text-align: center;
+        width: 35%;
+        margin-left: 33%;
+        height: 50px;
+        padding-top: 15px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    /* 問い合わせここまで */
     /*
     /*
   footer start

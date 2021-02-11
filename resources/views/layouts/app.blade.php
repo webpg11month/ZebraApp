@@ -91,7 +91,7 @@
             </div>
             <div class="header-fadeImg">
             <form class="header-fadeImg-1" action="{{action('TopController@index')}}" method="get">
-                <input type="text" name="search" value="" placeholder="キーワードを入力">
+                <input class="header-search" type="text" name="search" value="" placeholder="キーワードを入力">
                 <button>検索</button>
                 </form>
             </div>
