@@ -2,7 +2,9 @@
 @include('layouts.common')
 <body>
 <div class="login-header-wrapper">
-    <div class="login-header" >{{ __('Zebra') }}</div>
+    <div class="login-header-logo">
+        <div class="login-header" >{{ __('Zebra') }}</div>
+    </div>
     <div class="login-header" >{{ __('ログイン') }}</div>
 </div>
 <div>
