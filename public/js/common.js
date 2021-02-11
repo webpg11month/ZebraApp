@@ -3,7 +3,7 @@
 $(function(){
     $(function() {
       $(".switch-btn").on('click', function() {
-      $(".header-fadeImg").fadeToggle("fast",alertFunc);
+      $(".header-fadeImg").fadeToggle(500,alertFunc);
     });
     function alertFunc(){
         if ($(this).css('display') === 'block') {

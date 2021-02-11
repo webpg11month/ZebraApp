@@ -20,7 +20,7 @@ class HomeController extends Controller
     /**
      * Show the application dashboard.
      *
-     * 
+     *
      */
     public function index(Request $req)
     {

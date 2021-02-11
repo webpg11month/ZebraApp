@@ -412,6 +412,13 @@
         font-size: 0.8rem;
     }
 
+    .hamburger {
+        position: absolute;
+        margin-left: 5vw;
+        margin-top: 4vw;
+        z-index: 1;
+    }
+
     li.hamburger-item-2 {
         border-top: 2px solid #fafafa;
         padding-top: 15%;
@@ -420,18 +427,16 @@
         list-style: none;
     }
 
-    /* --------完了--------- */
+    /* --------検索--------- */
     .header-right {
         position: absolute;
         width: 25%;
         background-color: gray;
         z-index: 30;
     }
-
     .flex-search {
         display: flex;
     }
-
     .header-center {
         margin-left: 2vw;
     }
@@ -444,7 +449,7 @@
         width: 8vw;
         position: absolute;
         margin-top: 6vw;
-        margin-left: 86vw;
+        margin-left: 80vw;
         z-index: 15;
     }
 
@@ -460,19 +465,12 @@
         width: 100%;
         height: 22vw;
         padding: 5vw;
-        background-color: rgba(31, 25, 155, .5);
+        background-color: #5c5555;
         z-index: 10;
     }
 
-    .hamburger {
-        position: absolute;
-        margin-left: 5vw;
-        margin-top: 4vw;
-        z-index: 1;
-    }
-
     input[type="text"].header-search {
-        background-color: rgba(255, 255, 255, .9);
+        background-color: rgba(255, 255, 255, .7);
         border: 1px #fafafa solid;
         border-radius: 10px;
         width: 40vw;
@@ -483,12 +481,14 @@
         margin-left: 10vw;
     }
 
-    button {
+    button.header-button {
         width: 15vw;
         height: 10vw;
         font-weight: bold;
-        border-radius: 10px;
-        background: #fafafa;
+        margin-left: 5vw;
+        border-radius: 15px;
+        color: #fafafa;
+        background: #010101;
     }
 
     .size {
@@ -900,18 +900,22 @@
         text-decoration: none;
         list-style: none;
     }
-
+    .hamburger {
+        position: absolute;
+        margin-left: 5vw;
+        margin-top: 4vw;
+        z-index: 1;
+    }
+    /* --------検索--------- */
     .header-right {
         position: absolute;
         width: 25%;
         background-color: gray;
         z-index: 30;
     }
-
     .flex-search {
         display: flex;
     }
-
     .header-center {
         margin-left: 2vw;
     }
@@ -924,7 +928,7 @@
         width: 8vw;
         position: absolute;
         margin-top: 6vw;
-        margin-left: 86vw;
+        margin-left: 80vw;
         z-index: 15;
     }
 
@@ -940,36 +944,30 @@
         width: 100%;
         height: 22vw;
         padding: 5vw;
-        background-color: rgba(31, 25, 155, .5);
+        background-color: #5c5555;
         z-index: 10;
     }
 
-    .hamburger {
-        position: absolute;
-        margin-left: 5vw;
-        margin-top: 4vw;
-        z-index: 1;
-    }
-
     input[type="text"].header-search {
-        background-color: rgba(255, 255, 255, .9);
+        background-color: rgba(255, 255, 255, .7);
         border: 1px #fafafa solid;
         border-radius: 10px;
-        width: 50vw;
+        width: 40vw;
         height: 10vw;
-
     }
 
     .header-fadeImg-1 {
         margin-left: 10vw;
     }
 
-    button {
-        width: 14vw;
+    button.header-button {
+        width: 15vw;
         height: 10vw;
         font-weight: bold;
-        border-radius: 10px;
-        background: #fafafa;
+        margin-left: 5vw;
+        border-radius: 15px;
+        color: #fafafa;
+        background: #010101;
     }
 
     .size {
@@ -1375,6 +1373,13 @@
         font-size: 17px;
     }
 
+    .hamburger {
+        position: absolute;
+        margin-left: 5vw;
+        margin-top: 4vw;
+        z-index: 1;
+    }
+
     li.hamburger-item-2 {
         border-top: 2px solid #fafafa;
         padding-top: 15%;
@@ -1383,18 +1388,16 @@
         list-style: none;
     }
 
-    /* --------完了--------- */
+    /* --------検索--------- */
     .header-right {
         position: absolute;
         width: 25%;
         background-color: gray;
         z-index: 30;
     }
-
     .flex-search {
         display: flex;
     }
-
     .header-center {
         margin-left: 2vw;
     }
@@ -1407,7 +1410,7 @@
         width: 8vw;
         position: absolute;
         margin-top: 6vw;
-        margin-left: 86vw;
+        margin-left: 80vw;
         z-index: 15;
     }
 
@@ -1423,36 +1426,30 @@
         width: 100%;
         height: 22vw;
         padding: 5vw;
-        background-color: rgba(31, 25, 155, .5);
+        background-color: #5c5555;
         z-index: 10;
     }
 
-    .hamburger {
-        position: absolute;
-        margin-left: 5vw;
-        margin-top: 4vw;
-        z-index: 1;
-    }
-
     input[type="text"].header-search {
-        background-color: rgba(255, 255, 255, .9);
+        background-color: rgba(255, 255, 255, .7);
         border: 1px #fafafa solid;
         border-radius: 10px;
-        width: 50vw;
+        width: 40vw;
         height: 10vw;
-
     }
 
     .header-fadeImg-1 {
         margin-left: 10vw;
     }
 
-    button {
-        width: 14vw;
+    button.header-button {
+        width: 15vw;
         height: 10vw;
         font-weight: bold;
-        border-radius: 10px;
-        background: #fafafa;
+        margin-left: 5vw;
+        border-radius: 15px;
+        color: #fafafa;
+        background: #010101;
     }
 
     .size {
@@ -1862,6 +1859,13 @@
         font-size: 17px;
     }
 
+    .hamburger {
+        position: absolute;
+        margin-left: 5vw;
+        margin-top: 4vw;
+        z-index: 1;
+    }
+
     li.hamburger-item-2 {
         border-top: 2px solid #fafafa;
         padding-top: 15%;
@@ -1870,18 +1874,16 @@
         list-style: none;
     }
 
-    /* --------完了--------- */
+    /* --------検索--------- */
     .header-right {
         position: absolute;
         width: 25%;
         background-color: gray;
         z-index: 30;
     }
-
     .flex-search {
         display: flex;
     }
-
     .header-center {
         margin-left: 2vw;
     }
@@ -1894,7 +1896,8 @@
         width: 8vw;
         position: absolute;
         margin-top: 6vw;
-        margin-left: 86vw;
+        font-size: 2.5rem;
+        margin-left: 80vw;
         z-index: 15;
     }
 
@@ -1910,36 +1913,32 @@
         width: 100%;
         height: 22vw;
         padding: 5vw;
-        background-color: rgba(31, 25, 155, .5);
+        background-color: #5c5555;
         z-index: 10;
     }
 
-    .hamburger {
-        position: absolute;
-        margin-left: 5vw;
-        margin-top: 4vw;
-        z-index: 1;
-    }
-
     input[type="text"].header-search {
-        background-color: rgba(255, 255, 255, .9);
+        background-color: rgba(255, 255, 255, .7);
         border: 1px #fafafa solid;
         border-radius: 10px;
-        width: 50vw;
+        font-size: 1.5rem;
+        width: 40vw;
         height: 10vw;
-
     }
 
     .header-fadeImg-1 {
         margin-left: 10vw;
     }
 
-    button {
-        width: 14vw;
+    button.header-button {
+        width: 15vw;
         height: 10vw;
         font-weight: bold;
-        border-radius: 10px;
-        background: #fafafa;
+        margin-left: 5vw;
+        font-size: 1.5rem;
+        border-radius: 15px;
+        color: #fafafa;
+        background: #010101;
     }
 
     .size {
@@ -2215,8 +2214,8 @@
         /*ハンバーガーアイコンの設置スペース ハンバーガーアイコンのフレックス指定 fixedで固定*/
         width: 30%;
         height: 7.5vw;
-        margin-top: 4vw;
-        margin-left: 3.5vw;
+        margin-top: 6.5vw;
+        margin-left: 6.5vw;
         display: flex;
         align-items: center;
         cursor: pointer;
@@ -2354,18 +2353,15 @@
         list-style: none;
     }
 
-    /* --------完了--------- */
     .header-right {
         position: absolute;
         width: 25%;
         background-color: gray;
         z-index: 30;
     }
-
     .flex-search {
         display: flex;
     }
-
     .header-center {
         margin-left: 2vw;
     }
@@ -2377,8 +2373,9 @@
     #fadeInOutImg {
         width: 8vw;
         position: absolute;
-        margin-top: 6vw;
-        margin-left: 86vw;
+        margin-top: 7vw;
+        font-size: 3.5rem;
+        margin-left: 80vw;
         z-index: 15;
     }
 
@@ -2394,41 +2391,36 @@
         width: 100%;
         height: 22vw;
         padding: 5vw;
-        background-color: rgba(31, 25, 155, .5);
+        background-color: #5c5555;
         z-index: 10;
     }
 
-    .hamburger {
-        position: absolute;
-        margin-left: 5vw;
-        margin-top: 4vw;
-        z-index: 1;
-    }
-
     input[type="text"].header-search {
-        background-color: rgba(255, 255, 255, .9);
+        background-color: rgba(255, 255, 255, .7);
         border: 1px #fafafa solid;
         border-radius: 10px;
-        font-size: 2.5rem;
-        width: 50vw;
+        font-size: 1.5rem;
+        width: 40vw;
         height: 10vw;
-
     }
 
     .header-fadeImg-1 {
         margin-left: 10vw;
     }
 
-    button {
-        width: 14vw;
+    button.header-button {
+        width: 15vw;
         height: 10vw;
         font-weight: bold;
-        border-radius: 10px;
-        background: #fafafa;
+        margin-left: 5vw;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        color: #fafafa;
+        background: #010101;
     }
 
     .size {
-        font-size: 4rem;
+        font-size: 1.5rem;
     }
 
     /*

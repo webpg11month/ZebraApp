@@ -3,10 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Page;
 use App\SearchLogic;
-use Illuminate\Support\Facades\Log;
-
 class TopController extends Controller
 {
     /**

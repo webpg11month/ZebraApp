@@ -6,8 +6,8 @@
   <form action=" {{ action('ContactController@finish')}}" method="POST">
     @csrf
     <div class="name">
-      <input class="fname" type="text" name="first-name" placeholder="姓" value="">
-      <input class="lname" type="text" name="last-name" placeholder="名" value="">
+      <input class="fname" type="text" name="first_name" placeholder="姓" value="">
+      <input class="lname" type="text" name="last_name" placeholder="名" value="">
     </div>
     <div class="contact-mail">
     <input class="contact-mail-form" type="text" name="email" value="" placeholder="メールアドレス">
