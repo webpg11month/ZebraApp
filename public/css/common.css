@@ -2514,11 +2514,7 @@
         width: 15%;
     
     }
-    .invalid-check-firstname{
-        display: flex;
-        flex-direction: column;
-    }
-    .invalid-check-lastname {
+    .invalid-check {
         display: flex;
         flex-direction: column;
     }

@@ -8,17 +8,20 @@
         @csrf
         <div class="name">
             <input class="fname" type="text" name="first_name" placeholder="姓" value="">
-            @error('first_name')
-            <span class="invalid-check-firstname" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-            @enderror
             <input class="lname" type="text" name="last_name" placeholder="名" value="">
-            @error('last_name')
-            <span class="invalid-check-lastname" role="alert">
+            @if($errors->has('first_name'))
+            @error('first_name')
+            <span class="invalid-check" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
             @enderror
+            @elseif($errors->has('last_name'))
+            @error('last_name')
+            <span class="invalid-check" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+            @enderror
+            @endif
         </div>
         <div class="contact-mail">
             <input class="contact-mail-form" type="text" name="email" value="" placeholder="メールアドレス">

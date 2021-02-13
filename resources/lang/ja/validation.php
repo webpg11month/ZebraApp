@@ -146,10 +146,10 @@ return [
     */
 
     'attributes' => [
+        'first_name' =>'名前',
+        'last_name'=>'名前',
         'email'=>'Eメール',
         'password'=>'パスワード',
-        'first_name'=>'姓',
-        'last_name'=>'名'
     ],
 
 ];
