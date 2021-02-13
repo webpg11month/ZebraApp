@@ -20,12 +20,12 @@
                     <li class="side-contact"><a href="{{ action('ContactController@contact')}}"> 問い合わせ</a></li>
                     <div class="login">
                         @guest
-
-                        <li><a id="sideA" href="{{ route('login') }}">{{ __('ログイン') }}</a></li>
-                        @if (Route::has('register'))
-                        <li><a id="sideA" href="{{ route('register') }}">{{ __('サインアップ') }}</a></li>
-
-                        @endif
+                                <li>
+                                    <a id="sideA" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                </li>
+                            @if (Route::has('register'))
+                                <li><a id="sideA" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                            @endif
                         @else
                         <a class="logout" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                 document.getElementById('logout-form').submit();">

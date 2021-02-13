@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+/* error check */
+.invalid-check{
+    color: red;
+}
 @media screen and (min-width:1025px) {
     .all {
         padding-left: 18vw;
@@ -109,7 +113,6 @@
     }
 /* 問い合わせここまで */
     /* ログイン */
-
     .login-header-wrapper {
         font-size: 30px;
         font-weight: bold;
