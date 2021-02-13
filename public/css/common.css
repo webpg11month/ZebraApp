@@ -2497,25 +2497,31 @@
         font-weight: bold;
         text-align: center;
     }
-
     .name {
-        text-align: center;
-        padding: 30px 0px;
+        display: flex;
     }
-
     .fname {
         border-bottom: 1px solid #5c5555;
         margin-right: 2%;
-        margin-left: 1%;
+        margin-left: 33vw;
         width: 15%;
+        
     }
 
     .lname {
         border-bottom: 1px solid #5c5555;
-        margin-left: 3%;
+        margin-left: 2.5vw;
         width: 15%;
+    
     }
-
+    .invalid-check-firstname{
+        display: flex;
+        flex-direction: column;
+    }
+    .invalid-check-lastname {
+        display: flex;
+        flex-direction: column;
+    }
     .contact-mail {
         display: flex;
         flex-direction: column;
@@ -2561,6 +2567,7 @@
         margin-bottom: 20px;
         border-radius: 5px;
     }
+    
     /* 問い合わせここまで */
     /*
     /*
