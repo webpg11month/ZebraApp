@@ -24,14 +24,15 @@ class ContactRequest extends FormRequest
     public function rules()
     {
 
-        return [
-            'user_name' =>'required',
+        $test = [
+            'first_name' =>'required',
+            'last_name'=>'required',
             'contact_text' =>'required',
             'email' => [
                 'required',
                 'regex:/^[a-zA-Z0-9_+-]+(.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/',
-                'unique:users,email'
             ], //email unique
         ];
+        return $test;
     }
 }
