@@ -84,7 +84,7 @@
                     </div>
                     </ul>
                 </nav>
-            </div> 
+            </div>
             <h1 class="header-search-1">Zebra</h1>
             <div class="switch-btn">
                 <i class="fa fa-search size" id="fadeInOutImg" aria-hidden="true"></i>
@@ -92,7 +92,7 @@
             <div class="header-fadeImg">
             <form class="header-fadeImg-1" action="{{action('TopController@index')}}" method="get">
                 <input class="header-search" type="text" name="search" value="" placeholder="キーワードを入力">
-                <button>検索</button>
+                <button class="header-button">検索</button>
                 </form>
             </div>
         </nav>

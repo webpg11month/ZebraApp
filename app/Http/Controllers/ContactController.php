@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Page;
-use Illuminate\Support\Facades\Log;
 use App\SearchLogic;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ContactMail;
+use App\Contact;
+
+use App\Http\Requests\ContactRequest;
+use Illuminate\Support\Facades\Log;
 
 class ContactController extends Controller
 {
@@ -16,7 +18,7 @@ class ContactController extends Controller
         return view('contact');
     }
     //mail
-    public function finish(Request $request){
+    public function finish(ContactRequest $request){
         //home画面に戻る
         $page_data = $request->all();
         $search = new SearchLogic();
@@ -26,9 +28,18 @@ class ContactController extends Controller
         //アプリ作成
         $contact = $request;
         Mail::to($contact->email)->send(new ContactMail($contact));
+        //問い合わせ内容をcontactテーブルに追加
+        $query = Contact::query();
+        $user_name = $contact->first_name."  ".$contact->last_name;
+        Log::info($user_name);
+        Contact::create([
+            'user_name' => $user_name,
+            'email' => $contact->email,
+            'contact_text' => $contact->contact_text
+        ]);
         // 二重送信対策
         $request->session()->regenerateToken();
-        //問い合わせ内容をcontactテーブルに追加
+
         return view('home',compact('pages','message'));
     }
 }

@@ -14,13 +14,13 @@
         <div class="login-input-wrapper">
             <input class="login-input" type="email" name="email" placeholder="メールアドレス" value="" >
             @error('email')
-                <span class="invalid-feedback" role="alert">
+                <span class="invalid-check" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror
             <input class="login-input" type="password" name="password" placeholder="パスワード" value="">
             @error('password')
-                <span class="invalid-feedback" role="alert">
+                <span class="invalid-check" role="alert">
                     <strong>{{ $message }}</strong>
                 </span>
             @enderror

@@ -5,6 +5,8 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use App\Page;
 use Illuminate\Http\Request;
+use App\Http\Requests\UserRequest;
+
 
 class SearchLogic extends Model
 {

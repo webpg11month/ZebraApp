@@ -31,8 +31,8 @@ class ContactMail extends Mailable
     public function build()
     {
         return $this->subject('テスト送信')
-                    ->from('yasuhitonishide@gmail.com')
-                    ->cc('yasuhitonishide@gmail.com')
+                    ->from('webprogrammermash@gmail.com')
+                    ->cc('webprogrammermash@gmail.com')
                     ->text('email.email')
                     ->with(['contact' => $this->contact]);
     }
