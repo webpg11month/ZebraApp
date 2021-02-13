@@ -147,7 +147,9 @@ return [
 
     'attributes' => [
         'email'=>'Eメール',
-        'password'=>'パスワード'
+        'password'=>'パスワード',
+        'first_name'=>'姓',
+        'last_name'=>'名'
     ],
 
 ];
