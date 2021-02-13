@@ -1,5 +1,94 @@
 @charset "utf-8";
 
+   /* 新規登録画面 */
+   .register-top-logo {
+    text-align: center;
+    padding-top: 3%;
+}
+.register-logo {
+    padding-top: 3%;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.register-name {
+    padding-top: 3%;
+    display: flex;
+}
+.register-name1 {
+    margin: 0 auto;
+    text-align: center;
+}
+#register-fname {
+    border-bottom: 1px solid #5c5555;
+    margin-right: 1vw;
+    width: 14vw;
+}
+#register-lname {
+    border-bottom: 1px solid #5c5555;
+    margin-left: 1vw;
+    width: 14vw;
+}
+.register-mail-wrap {
+    padding-top: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+#register-mail {
+    border-bottom: 1px solid #5c5555;
+    width: 30vw;
+}
+.register-password {
+    padding-top: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+#register-password1 {
+    border-bottom: 1px solid #5c5555;
+    width: 30vw;
+}
+.register-check-wrap {
+    padding-top: 2%;
+    margin: 0 auto;
+    text-align: center;
+}
+#register-check {
+    border-bottom: 1px solid #5c5555;
+    width: 30vw;
+}
+.birth-wrap {
+    padding-top: 2%;
+    margin: 0 auto;
+    text-align: center;
+    width: 30vw;
+    border-bottom: 1px solid #5c5555 ;
+}
+.birth {
+    opacity: 0.5;
+    margin-bottom: 0;
+}
+
+.birth-wrap1 {
+    margin: 0 auto;
+    display: flex;
+
+}
+.register-btn-wrap {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.register-btn {
+
+    color: #fff;
+    background-color: black;
+    width: 30vw;
+    border-radius: 2px;
+}
+
+
+
 /* error check */
 .invalid-check{
     color: red;
@@ -670,7 +759,7 @@ input.login-input {
     }
 
     /* ログインここまで */
-
+    
 
 }
 
