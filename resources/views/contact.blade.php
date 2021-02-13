@@ -30,6 +30,7 @@
         </span>
     @enderror
     <input class="contact-remail-form" type="text" name="remail" value="" placeholder="メールアドレス確認用">
+    {{-- jsの処理を記入 --}}
     </div>
     <div class="item-name1">
     <span class="item-name">お問い合わせ内容</span>
@@ -37,7 +38,7 @@
     <div class="textarea-wrap">
       <textarea name="contact_text" rows="8" cols="80" value=""></textarea>
     </div>
-    @error('text')
+    @error('contact_text')
     <span class="invalid-check" role="alert">
         <strong>{{ $message }}</strong>
     </span>
