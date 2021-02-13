@@ -7,11 +7,11 @@
     <form action=" {{ action('ContactController@finish')}}" method="POST">
         @csrf
         <div class="name">
-            <input class="fname" type="text" name="first_name" placeholder="姓" value="">
-            <input class="lname" type="text" name="last_name" placeholder="名" value="">
+            <input class="fname" type="text" name="first_name" placeholder="姓" value="{{ old('first_name') }}">
+            <input class="lname" type="text" name="last_name" placeholder="名" value="{{ old('last_name') }}">
             @if($errors->has('first_name'))
             @error('first_name')
-            <span class="invalid-check" role="alert">
+            <br><span class="invalid-check" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
             @enderror
@@ -24,7 +24,7 @@
             @endif
         </div>
         <div class="contact-mail">
-            <input class="contact-mail-form" type="text" name="email" value="" placeholder="メールアドレス">
+            <input class="contact-mail-form" type="text" name="email" value="{{ old('email') }}" placeholder="メールアドレス">
             @error('email')
             <span class="invalid-check" role="alert">
                 <strong>{{ $message }}</strong>
@@ -38,10 +38,12 @@
         <div class="textarea-wrap">
             <textarea name="contact_text" rows="8" cols="80" value=""></textarea>
         </div>
-        @error('text')
+        @error('contact_text')
+        <div class="invalid-check-oya">
         <span class="invalid-check" role="alert">
             <strong>{{ $message }}</strong>
         </span>
+        </div>
         @enderror
         </div>
         <div class="submit-wrap">

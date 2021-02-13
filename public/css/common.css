@@ -3,6 +3,10 @@
 /* error check */
 .invalid-check{
     color: red;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
 }
 @media screen and (min-width:1025px) {
     .all {
@@ -2497,9 +2501,6 @@
         font-weight: bold;
         text-align: center;
     }
-    .name {
-        display: flex;
-    }
     .fname {
         border-bottom: 1px solid #5c5555;
         margin-right: 2%;
@@ -2514,9 +2515,11 @@
         width: 15%;
     
     }
-    .invalid-check {
+    .invalid-check{
         display: flex;
         flex-direction: column;
+        width: 100%;
+        text-align: center;
     }
     .contact-mail {
         display: flex;
