@@ -11,13 +11,13 @@
             <input class="lname" type="text" name="last_name" placeholder="名" value="{{ old('last_name') }}">
             @if($errors->has('first_name'))
             @error('first_name')
-            <br><span class="invalid-check" role="alert">
+            <br><span class="invalid-check invalide-check-contact" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
             @enderror
             @elseif($errors->has('last_name'))
             @error('last_name')
-            <span class="invalid-check" role="alert">
+            <span class="invalid-check invalide-check-contact" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
             @enderror
@@ -26,7 +26,7 @@
         <div class="contact-mail">
             <input class="contact-mail-form" type="text" name="email" value="{{ old('email') }}" placeholder="メールアドレス">
             @error('email')
-            <span class="invalid-check" role="alert">
+            <span class="invalid-check invalide-check-contact" role="alert">
                 <strong>{{ $message }}</strong>
             </span>
             @enderror
@@ -40,7 +40,7 @@
         </div>
         @error('contact_text')
         <div class="invalid-check-oya">
-        <span class="invalid-check" role="alert">
+        <span class="invalid-check invalide-check-contact" role="alert">
             <strong>{{ $message }}</strong>
         </span>
         </div>
