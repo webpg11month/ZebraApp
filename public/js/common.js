@@ -22,3 +22,13 @@ $(function(){
     //属性の削除
     $(".switch-btn").html("<i class='fa fa-search size' id='fadeInOutImg' aria-hidden='true'></i>");
   })
+  //とりあえずは削除
+  $(function() {
+    $("#dayselect").on("change", function(e) {
+      console.log(e.currentTarget.value);
+      //押せなくする処理
+    $(".hidden").prop("disabled", true);
+      //消す処理
+      //$(".hidden").remove();
+    });
+  })
