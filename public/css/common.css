@@ -5,7 +5,6 @@
     text-align: center;
     padding-top: 3%;
 }
-
 .register-logo {
     padding-top: 3%;
     text-align: center;
@@ -68,14 +67,6 @@
     width: 30vw;
 }
 
-.birth-wrap {
-    padding-top: 2%;
-    margin: 0 auto;
-    text-align: center;
-    width: 30vw;
-    border-bottom: 1px solid #5c5555;
-    display: flex;
-}
 
 .birth {
     opacity: 0.5;
@@ -85,7 +76,6 @@
 .birth-wrap1 {
     margin: 0 auto;
     display: flex;
-
 }
 
 .register-btn-wrap {
@@ -97,13 +87,33 @@
 
 
 .register-btn {
-
     color: #fff;
     background-color: black;
     width: 30vw;
     border-radius: 2px;
 }
-/* 新規登録ここまで */
+
+.birth-wrap1 {
+    /* margin-left: 35vw; */
+    justify-content: center;
+    padding-top: 2%;
+
+}
+
+input.register-birthday {
+    width:10vw;
+    margin-left: 2vw;
+    border-bottom:1px solid #5c5555;
+}
+input.register-birthmonth {
+    width:10vw;
+    margin-left: 2vw;
+    border-bottom:1px solid #5c5555;
+}
+#dayselect {
+    border-bottom: 1px solid #5c5555;
+}
+
 /* error check */
 .invalid-check {
     color: red;
@@ -818,6 +828,26 @@ footer {
         margin-bottom: 20px;
         border-radius: 5px;
     }
+    /* 新規登録画面 */
+    #register-fname {
+    width: 19vw;
+    }
+    #register-lname {
+    width: 19vw;
+    }
+    #register-mail {
+        width: 40vw;
+    }
+    #register-password1 {
+        width: 40vw;
+    }
+    #register-check {
+        width: 40vw;
+    }
+    /* 新規登録画面ここまで */
+    .invalid-check {
+        font-size: 9px;
+    }
 }
 
 @media screen and (min-width:375px) and (max-width:549px) {
@@ -830,6 +860,26 @@ footer {
         height: 17vw;
         background-color: #5c5555;
     }
+    /* 新規登録画面 */
+    #register-fname {
+        width: 17.5vw;
+    }
+    #register-lname {
+        width: 17.5vw;
+    }
+    #register-mail {
+        width: 37vw;
+    }
+    #register-password1 {
+        width: 37vw;
+    }
+    #register-check {
+        width: 37vw;
+    }
+    .invalid-check {
+        font-size: 10px;
+    }
+    /* 新規登録画面ここまで */
 }
 
 @media screen and (min-width:550px) and (max-width:669px) {
@@ -842,6 +892,23 @@ footer {
         height: 15vw;
         background-color: #5c5555;
     }
+    /* 新規登録画面 */
+    #register-fname {
+        width: 15.5vw;
+    }
+    #register-lname {
+    width: 15.5vw;
+    }
+    #register-mail {
+    width: 33vw;
+    }
+    #register-password1 {
+    width: 33vw;
+    }
+    #register-check {
+        width: 33vw;
+    }
+    /* 新規登録画面ここまで */
 }
 
 @media screen and (min-width:666px) and (max-width:766px) {
@@ -854,6 +921,7 @@ footer {
         height: 17vw;
         background-color: #5c5555;
     }
+    /* 新規登録 */
 }
 
 @media screen and (min-width:767px) and (max-width:1024px) {

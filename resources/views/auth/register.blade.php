@@ -63,61 +63,69 @@
                     autocomplete="password">
             </div>
         </div>
-
-        <div class="birth-wrap">
-            <div class="birth-wrap1">
-                <div class="register-birth">
-                    <select id="dayselect" name="month">
-                        <option class="hidden" value="">誕生月</option>
-                        <option value="01">1月</option>
-                        <option value="02">2月</option>
-                        <option value="03">3月</option>
-                        <option value="04">4月</option>
-                        <option value="05">5月</option>
-                        <option value="06">6月</option>
-                        <option value="07">7月</option>
-                        <option value="08">8月</option>
-                        <option value="09">9月</option>
-                        <option value="10">10月</option>
-                        <option value="11">11月</option>
-                        <option value="12">12月</option>
-                    </select>
-                    <input class="register-birthday" name="day" type="tel" placeholder="日">
-                    <input class="register-birthyear" name="year" type="tel" placeholder="年">
-                </div>
-                @error('birthday')
-                <span class="invalid-check" role="alert">
-                    <strong>{{ $message }}</strong>
-                </span>
-                @enderror
-            </div>
-            @if($errors->has('month'))
-            @error('month')
-            <br><span class="invalid-check" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-            @enderror
-            @elseif($errors->has('day'))
-            @error('day')
-            <span class="invalid-check" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-            @enderror
-            @elseif($errors->has('year'))
-            @error('year')
-            <span class="invalid-check" role="alert">
-                <strong>{{ $message }}</strong>
-            </span>
-            @enderror
-            @endif
-            <div class="register-btn-wrap">
-                <button type="submit" class="register-btn">
-                    {{ __('Register') }}
-                </button>
-            </div>
-            </form>
-        </div>
     </div>
+    
+    
+        <div class="birth-wrap1">
+            <div class="register-birth">
+                <select id="dayselect" name="month">
+                    <option class="hidden" value="">誕生月</option>
+                    <option value="01">1月</option>
+                    <option value="02">2月</option>
+                    <option value="03">3月</option>
+                    <option value="04">4月</option>
+                    <option value="05">5月</option>
+                    <option value="06">6月</option>
+                    <option value="07">7月</option>
+                    <option value="08">8月</option>
+                    <option value="09">9月</option>
+                    <option value="10">10月</option>
+                    <option value="11">11月</option>
+                    <option value="12">12月</option>
+                </select>
+                <input class="register-birthday" name='day' type="tel" autocomplete="date" placeholder="日" maxlength="2">
+                <input class="register-birthmonth" name='year' type="tel" autocomplete="date" placeholder="年" maxlength="4">
+            </div>
+        @error('birthday')
+        <span class="invalid-check" role="alert">
+            <strong>{{ $message }}</strong>
+        </span>
+        @enderror
+    </div>
+    @if($errors->has('month'))
+    @error('month')
+    <br><span class="invalid-check" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+    @enderror
+    @elseif($errors->has('day'))
+    @error('day')
+    <span class="invalid-check" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+    @enderror
+    @elseif($errors->has('year'))
+    @error('year')
+    <span class="invalid-check" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+    @enderror
+    @endif
+    <div class="register-btn-wrap">
+        <button type="submit" class="register-btn">
+            {{ __('Register') }}
+        </button>
+    </div>
+    @error('birthday')
+    <span class="invalid-check" role="alert">
+        <strong>{{ $message }}</strong>
+    </span>
+    @enderror
+</div>
+
+</form>
+</div>
+</div>
 </div>
 </div>
 </div>
