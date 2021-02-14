@@ -150,6 +150,7 @@ return [
         'last_name'=>'名前',
         'email'=>'Eメール',
         'password'=>'パスワード',
+        'birthday'=>'誕生日',
     ],
 
 ];
