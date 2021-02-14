@@ -87,6 +87,11 @@
                             <input class="register-birthmonth" name='year' type="tel" autocomplete="date" placeholder="年">
                         </div>
                     </div>
+                    @error('birthday')
+                        <span class="invalid-check" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                        @enderror
                 </div>
                 @if($errors->has('month'))
                     @error('month')
@@ -118,4 +123,14 @@
 </div>
 </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $('#birth-hidden1').on("change", function () {
+            $("#birth-hidden").attr("disabled", true)
+
+        });
+    });
+
+</script>
 @endsection

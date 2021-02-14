@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-   /* 新規登録画面 */
-   .register-top-logo {
+/* 新規登録画面 */
+.register-top-logo {
     text-align: center;
     padding-top: 3%;
 }
@@ -11,58 +11,71 @@
     font-size: 1rem;
     font-weight: bold;
 }
+
 .register-name {
     padding-top: 3%;
     display: flex;
 }
+
 .register-name1 {
     margin: 0 auto;
     text-align: center;
 }
+
 #register-fname {
     border-bottom: 1px solid #5c5555;
     margin-right: 1vw;
     width: 14vw;
 }
+
 #register-lname {
     border-bottom: 1px solid #5c5555;
     margin-left: 1vw;
     width: 14vw;
 }
+
 .register-mail-wrap {
     padding-top: 2%;
     margin: 0 auto;
     text-align: center;
 }
+
 #register-mail {
     border-bottom: 1px solid #5c5555;
     width: 30vw;
 }
+
 .register-password {
     padding-top: 2%;
     margin: 0 auto;
     text-align: center;
 }
+
 #register-password1 {
     border-bottom: 1px solid #5c5555;
     width: 30vw;
 }
+
 .register-check-wrap {
     padding-top: 2%;
     margin: 0 auto;
     text-align: center;
 }
+
 #register-check {
     border-bottom: 1px solid #5c5555;
     width: 30vw;
 }
+
 .birth-wrap {
     padding-top: 2%;
     margin: 0 auto;
     text-align: center;
     width: 30vw;
-    border-bottom: 1px solid #5c5555 ;
+    border-bottom: 1px solid #5c5555;
+    display: flex;
 }
+
 .birth {
     opacity: 0.5;
     margin-bottom: 0;
@@ -73,12 +86,15 @@
     display: flex;
 
 }
+
 .register-btn-wrap {
     margin: 0 auto;
     text-align: center;
     padding-top: 2%;
     padding-bottom: 2%;
 }
+
+
 .register-btn {
 
     color: #fff;
@@ -87,10 +103,19 @@
     border-radius: 2px;
 }
 
+select#dayselect{
+    padding-right: 5.5vw;
+}
+input.register-birthday {
+    width:10vw;
+}
+input.register-birthmonth {
+    width:10vw;
+}
 
 
 /* error check */
-.invalid-check{
+.invalid-check {
     color: red;
     display: flex;
     flex-direction: column;
@@ -276,6 +301,7 @@ li.hamburger-item-2 {
     text-decoration: none;
     list-style: none;
 }
+
 /* link共通 */
 .pager-links {
     z-index: 10;
@@ -341,6 +367,7 @@ a:hover {
     color: #fafafa;
     text-decoration: none;
 }
+
 /* チェックボックスは非表示に */
 .check-hidden {
     /*チェックボックス削除*/
@@ -370,9 +397,11 @@ a:hover {
     background-color: gray;
     z-index: 30;
 }
+
 .flex-search {
     display: flex;
 }
+
 .header-center {
     margin-left: 2vw;
 }
@@ -494,106 +523,111 @@ input.login-input {
   footer start
   edit_manshou
   */
-  body,
-  #wrapper {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-  }
+body,
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 
-  footer {
-      margin-top: auto;
-      height: 22vw;
-      background-color: #5c5555;
-  }
+footer {
+    margin-top: auto;
+    height: 22vw;
+    background-color: #5c5555;
+}
 
-  .footer-icon-flex {
-      margin: 3vw;
+.footer-icon-flex {
+    margin: 3vw;
 
-  }
+}
 
-  .copy-light {
-      background-color: aqua;
-      font-size: 10px;
-  }
-    /* コンタクト */
-    .top-logo {
-        margin-top: 10%;
-        text-align: center;
-        font-size: 50px;
-        font-weight: bold;
-    }
+.copy-light {
+    background-color: aqua;
+    font-size: 10px;
+}
 
-    .contact {
-        font-size: 30px;
-        font-weight: bold;
-        text-align: center;
-    }
-    .fname {
-        border-bottom: 1px solid #5c5555;
-        margin-right: 2%;
-        margin-left: 33vw;
-        width: 15%;
+/* コンタクト */
+.top-logo {
+    margin-top: 10%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
 
-    }
+.contact {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
 
-    .lname {
-        border-bottom: 1px solid #5c5555;
-        margin-left: 2.5vw;
-        width: 15%;
+.fname {
+    border-bottom: 1px solid #5c5555;
+    margin-right: 2%;
+    margin-left: 33vw;
+    width: 15%;
 
-    }
-    .invalid-check{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-    .contact-mail {
-        display: flex;
-        flex-direction: column;
-        width: 35%;
-        margin-left: 33%;
+}
 
-    }
+.lname {
+    border-bottom: 1px solid #5c5555;
+    margin-left: 2.5vw;
+    width: 15%;
 
-    .contact-mail-form {
-        text-align: center;
-        border-bottom: 1px solid #5c5555;
-        padding-top: 10px;
-    }
+}
 
-    .contact-remail-form {
-        text-align: center;
-        border-bottom: 1px solid #5c5555;
-        padding-top: 10px;
-    }
+.invalid-check {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
 
-    .item-name1 {
-        padding-top: 30px;
-        margin-left: 35%;
-    }
+.contact-mail {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-left: 33%;
 
-    .textarea-wrap textarea {
-        padding: 2vw;
-        border: 2px solid #5c5555;
-        width: 35%;
-        border-radius: 50px;
-        margin-left: 33%;
-    }
+}
 
-    .submit-wrap {
-        color: #fff;
-        background-color: black;
-        text-align: center;
-        width: 35%;
-        margin-left: 33%;
-        height: 50px;
-        padding-top: 15px;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-    }
+.contact-mail-form {
+    text-align: center;
+    border-bottom: 1px solid #5c5555;
+    padding-top: 10px;
+}
+
+.contact-remail-form {
+    text-align: center;
+    border-bottom: 1px solid #5c5555;
+    padding-top: 10px;
+}
+
+.item-name1 {
+    padding-top: 30px;
+    margin-left: 35%;
+}
+
+.textarea-wrap textarea {
+    padding: 2vw;
+    border: 2px solid #5c5555;
+    width: 35%;
+    border-radius: 50px;
+    margin-left: 33%;
+}
+
+.submit-wrap {
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    width: 35%;
+    margin-left: 33%;
+    height: 50px;
+    padding-top: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
 @media screen and (min-width:1025px) {
     .all {
         padding-left: 18vw;
@@ -607,6 +641,7 @@ input.login-input {
         text-align: center;
 
     }
+
     .main-center-images img {
         border: 1px solid #5c5555;
         width: 900px;
@@ -623,6 +658,7 @@ input.login-input {
         width: auto;
 
     }
+
     /* コンタクト */
     .top-logo {
         margin-top: 10%;
@@ -700,7 +736,8 @@ input.login-input {
         margin-bottom: 20px;
         border-radius: 5px;
     }
-/* 問い合わせここまで */
+
+    /* 問い合わせここまで */
     /* ログイン */
     .login-header-wrapper {
         font-size: 30px;
@@ -759,7 +796,7 @@ input.login-input {
     }
 
     /* ログインここまで */
-    
+
 
 }
 
@@ -792,45 +829,54 @@ input.login-input {
         border-radius: 5px;
     }
 }
+
 @media screen and (min-width:375px) and (max-width:549px) {
     .size {
         font-size: 2.0rem;
     }
+
     footer {
         margin-top: auto;
         height: 17vw;
         background-color: #5c5555;
     }
 }
+
 @media screen and (min-width:550px) and (max-width:669px) {
     .size {
         font-size: 2.0rem;
     }
+
     footer {
         margin-top: auto;
         height: 15vw;
         background-color: #5c5555;
     }
 }
+
 @media screen and (min-width:666px) and (max-width:766px) {
     .size {
         font-size: 3.5rem;
     }
+
     footer {
         margin-top: auto;
         height: 17vw;
         background-color: #5c5555;
     }
 }
+
 @media screen and (min-width:767px) and (max-width:1024px) {
     .size {
         font-size: 4.5rem;
     }
+
     footer {
         margin-top: auto;
         height: 15vw;
         background-color: #5c5555;
     }
+
     .footer-icon-flex {
         margin: 3vw;
     }
