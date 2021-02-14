@@ -103,7 +103,7 @@
     width: 30vw;
     border-radius: 2px;
 }
-
+/* 新規登録ここまで */
 /* error check */
 .invalid-check {
     color: red;
@@ -786,7 +786,7 @@ footer {
     }
 
     /* ログインここまで */
-
+/* 新規登録画面 */
 
 }
 

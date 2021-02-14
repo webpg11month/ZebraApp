@@ -35,19 +35,22 @@ class RegisterController extends Controller
             'max:255',
             'regex:/^[a-zA-Z0-9_+-]+(.[a-zA-Z0-9_+-]+)*@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/',
             'unique:users'],
-            'birthday'=>['required', 'string', 'max:255'],
+            'month'=>['required'],
+            'year'=>['required'],
+            'day'=>['required'],
         ]);
     }
 
     protected function create(array $data)
     {
-        Log::info($data['month']);
+
+        $birthday = $data['year']."-".$data['month']."-".$data['day'];
         return User::create([
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'password' => Hash::make($data['password']),
             'email' => $data['email'],
-            'birthday' =>$data['birthday'],
+            'birthday' => $birthday ,
         ]);
     }
 }

@@ -21,5 +21,5 @@
 <body>
         @yield('content')
 </body>
-
+<script type="text/javascript" src="js/common.js"></script>
 </html>

@@ -146,6 +146,9 @@ return [
     */
 
     'attributes' => [
+        'day' => '日',
+        'year' => '年',
+        'month' => '誕生日',
         'first_name' =>'名前',
         'last_name'=>'名前',
         'email'=>'Eメール',
